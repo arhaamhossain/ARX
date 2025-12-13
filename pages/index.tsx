@@ -239,8 +239,13 @@ const technologies = [
 export default function Home() {
   const [activeImage, setActiveImage] = useState<{ [key: string]: number }>({});
 
-  // Reset scroll position to top on page load
+  // Reset scroll position and disable browser scroll restoration
   useEffect(() => {
+    // Disable browser's scroll restoration
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    // Scroll to top
     window.scrollTo(0, 0);
   }, []);
 
@@ -260,8 +265,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen text-white relative">
-      {/* Animated Blob Background */}
-      <svg className="fixed inset-0 -z-10 w-full h-full">
+      {/* Animated Blob Background - Full Page */}
+      <svg className="fixed inset-0 -z-10 w-screen h-screen pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
         <defs>
           <filter id="blur">
             <feGaussianBlur in="SourceGraphic" stdDeviation="40" />
