@@ -603,12 +603,12 @@ export default function Home() {
                   <span className="text-white font-semibold">Gymming and Gaming</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Countries Traveled</span>
-                  <span className="text-white font-semibold">9</span>
-                </div>
-                <div className="flex justify-between">
                   <span>Favorite Restaurant</span>
                   <span className="text-white font-semibold">Di Fara in Brooklyn</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Countries Traveled</span>
+                  <span className="text-white font-semibold">9</span>
                 </div>
               </div>
             </div>
