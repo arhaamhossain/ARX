@@ -304,28 +304,40 @@ export default function Home() {
             high-performance hardware and software systems.
           </p>
           
-          {/* Links Section */}
-          <div className="flex flex-wrap gap-4">
+          {/* Links Section with Icons */}
+          <div className="flex flex-wrap gap-6 items-center">
             <a
-              href="/resume.pdf"
+              href="/ARX/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 underline transition"
+              className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition"
+              title="Download Resume"
             >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M8,15.5H16V17H8V15.5M8,11H16V12.5H8V11Z" />
+              </svg>
               Resume
             </a>
             <a
               href="mailto:arhaamhossain2004@gmail.com"
-              className="text-blue-400 hover:text-blue-300 underline transition"
+              className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition"
+              title="Send Email"
             >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20,4H4C2.9,4 2,4.9 2,6V18C2,19.1 2.9,20 4,20H20C21.1,20 22,19.1 22,18V6C22,4.9 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z" />
+              </svg>
               Email
             </a>
             <a
               href="https://linkedin.com/in/arhaam-hossain"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 underline transition"
+              className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition"
+              title="LinkedIn Profile"
             >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.23,9.94 13.13,10.56 12.51,11.6V10.13H10.13V18.5H12.51V13.57C12.51,12.8 13.1,12.17 13.87,12.17A1.73,1.73 0 0,1 15.6,13.87V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.54V18.5H8.27Z" />
+              </svg>
               LinkedIn
             </a>
           </div>
