@@ -604,7 +604,7 @@ export default function Home() {
                 </div>
                 <div className="flex justify-between">
                   <span>Favorite Restaurant</span>
-                  <span className="text-white font-semibold">Di Fara in Brooklyn</span>
+                  <span className="text-white font-semibold">Di Fara Pizza in Brooklyn</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Countries Traveled</span>
