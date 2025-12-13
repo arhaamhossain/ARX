@@ -418,8 +418,8 @@ export default function Home() {
 
       {/* Projects Sections */}
       <section id="projects" className="py-20">
-        {categories.map((category, idx) => (
-          <div key={category.title} className={`mb-24 ${idx % 2 === 0 ? 'bg-black' : 'bg-gray-950/50'} py-20 px-6`}>
+        {categories.map((category) => (
+          <div key={category.title} className={`mb-24 bg-gray-950/50 py-20 px-6`}>
             <div className="max-w-6xl mx-auto">
               <h2 className="text-4xl font-bold mb-4 text-white">
                 {category.title}
@@ -598,19 +598,19 @@ export default function Home() {
           </div>
           <div className="space-y-4">
             <div className="border border-gray-800 rounded-lg p-6 bg-gray-950/50 backdrop-blur">
-              <h3 className="text-white font-semibold mb-4">Quick Stats</h3>
+              <h3 className="text-white font-semibold mb-4">Quick Facts</h3>
               <div className="space-y-3 text-gray-400">
                 <div className="flex justify-between">
-                  <span>Projects Completed</span>
-                  <span className="text-white font-semibold">20+</span>
+                  <span>Focus</span>
+                  <span className="text-white font-semibold">Hardware & Embedded</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Technologies</span>
-                  <span className="text-white font-semibold">15+</span>
+                  <span>Specialization</span>
+                  <span className="text-white font-semibold">Robotics & Control</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Open Source Contributions</span>
-                  <span className="text-white font-semibold">50+</span>
+                  <span>Approach</span>
+                  <span className="text-white font-semibold">Full-Stack Engineering</span>
                 </div>
               </div>
             </div>
