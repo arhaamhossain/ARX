@@ -287,10 +287,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-6 py-24 md:py-32">
         <div className="mb-12">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">
-            <span className="text-white">Arhaam</span> Hossain
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 gradient-text">
+            <span className="bg-gradient-to-r from-white via-white to-gray-400 bg-clip-text text-transparent">Arhaam Hossain</span>
           </h1>
-          <div className="flex flex-wrap gap-3 text-lg md:text-2xl text-gray-300 mb-8">
+          <div className="flex flex-wrap gap-3 text-lg md:text-2xl text-gray-300 mb-8 font-medium">
             <span>Electrical Engineering</span>
             <span>•</span>
             <span>Stony Brook University</span>
