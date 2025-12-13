@@ -254,7 +254,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white">
+    <div className="min-h-screen bg-black text-white">
       <Head>
         <title>Arhaam Hossain - Electrical Engineer</title>
         <meta
@@ -265,7 +265,7 @@ export default function Home() {
       </Head>
 
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 border-b border-slate-700/50 backdrop-blur-md bg-slate-950/50">
+      <nav className="sticky top-0 z-50 border-b border-gray-800 backdrop-blur-md bg-black/95">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <a href="#" className="text-2xl font-bold text-blue-400">
             <img src="/ARX/arx.png" alt="ARX Logo" className="h-10" />
@@ -299,13 +299,9 @@ export default function Home() {
             <span>•</span>
             <span>Research</span>
           </div>
-          <p className="text-gray-400 text-lg max-w-2xl mb-8">
-            Engineering with modern tools and open-source principles. Designing
-            high-performance hardware and software systems.
-          </p>
           
           {/* Links Section with Icons */}
-          <div className="flex flex-wrap gap-6 items-center">
+          <div className="flex flex-wrap gap-6 items-center mt-8">
             <a
               href="/ARX/resume.pdf"
               target="_blank"
@@ -352,7 +348,7 @@ export default function Home() {
             {technologies.map((tech) => (
               <div
                 key={tech.category}
-                className="border border-slate-700 rounded-lg p-4 bg-slate-900/50 backdrop-blur"
+                className="border border-gray-800 rounded-lg p-4 bg-gray-950/50 backdrop-blur"
               >
                 <h3 className="font-semibold text-blue-400 mb-3">
                   {tech.category}
@@ -361,7 +357,7 @@ export default function Home() {
                   {tech.items.map((item) => (
                     <span
                       key={item}
-                      className="px-3 py-1 text-sm bg-slate-800 rounded-full text-gray-300 hover:bg-blue-500/20 transition"
+                      className="px-3 py-1 text-sm bg-gray-900 rounded-full text-gray-300 hover:bg-blue-500/20 transition"
                     >
                       {item}
                     </span>
@@ -390,11 +386,11 @@ export default function Home() {
               {category.projects.map((project) => (
                 <div
                   key={project.title}
-                  className="border border-slate-700 rounded-lg overflow-hidden bg-slate-900/50 backdrop-blur hover:border-blue-500/50 transition group"
+                  className="border border-gray-800 rounded-lg overflow-hidden bg-gray-950/50 backdrop-blur hover:border-blue-500/50 transition group"
                 >
                   {/* Project Image Carousel */}
                   {project.images && project.images.length > 0 && (
-                    <div className="relative bg-slate-950 overflow-hidden aspect-video">
+                    <div className="relative bg-gray-950 overflow-hidden aspect-video">
                       <img
                         src={
                           project.images[
@@ -528,7 +524,7 @@ export default function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="max-w-6xl mx-auto px-6 py-20 border-t border-slate-700"
+        className="max-w-6xl mx-auto px-6 py-20 border-t border-gray-800"
       >
         <h2 className="text-4xl font-bold mb-8 text-blue-400">About</h2>
         <div className="grid md:grid-cols-2 gap-12">
@@ -551,7 +547,7 @@ export default function Home() {
             </p>
           </div>
           <div className="space-y-4">
-            <div className="border border-slate-700 rounded-lg p-6 bg-slate-900/50 backdrop-blur">
+            <div className="border border-gray-800 rounded-lg p-6 bg-gray-950/50 backdrop-blur">
               <h3 className="text-blue-400 font-semibold mb-4">Quick Stats</h3>
               <div className="space-y-3 text-gray-400">
                 <div className="flex justify-between">
@@ -575,7 +571,7 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="max-w-6xl mx-auto px-6 py-20 border-t border-slate-700"
+        className="max-w-6xl mx-auto px-6 py-20 border-t border-gray-800"
       >
         <h2 className="text-4xl font-bold mb-8 text-blue-400">Get in Touch</h2>
         <p className="text-gray-400 text-lg mb-8 max-w-2xl">
@@ -609,7 +605,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-slate-700 bg-slate-950/50 backdrop-blur py-8">
+      <footer className="border-t border-gray-800 bg-black/95 backdrop-blur py-8">
         <div className="max-w-6xl mx-auto px-6 text-center text-gray-500 text-sm">
           <p>© 2024 Arhaam Hossain. Built with Next.js & Tailwind CSS.</p>
         </div>
