@@ -599,16 +599,16 @@ export default function Home() {
               <h3 className="text-white font-semibold mb-4">Quick Facts</h3>
               <div className="space-y-3 text-gray-400">
                 <div className="flex justify-between">
-                  <span>Focus</span>
-                  <span className="text-white font-semibold">Hardware & Embedded</span>
+                  <span>Hobbies</span>
+                  <span className="text-white font-semibold">Gymming and Gaming</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Specialization</span>
-                  <span className="text-white font-semibold">Robotics & Control</span>
+                  <span>Countries Traveled</span>
+                  <span className="text-white font-semibold">9</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Approach</span>
-                  <span className="text-white font-semibold">Full-Stack Engineering</span>
+                  <span>Favorite Restaurant</span>
+                  <span className="text-white font-semibold">Di Fara in Brooklyn</span>
                 </div>
               </div>
             </div>
