@@ -254,7 +254,76 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen text-white">
+    <div className="min-h-screen text-white relative">
+      {/* Animated Blob Background */}
+      <svg className="fixed inset-0 -z-10 w-full h-full">
+        <defs>
+          <filter id="blur">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="40" />
+          </filter>
+        </defs>
+        {/* Blob 1 - Top Left */}
+        <circle
+          cx="15%"
+          cy="20%"
+          r="200"
+          fill="#ffffff"
+          opacity="0.03"
+          filter="url(#blur)"
+          style={{
+            animation: 'float1 20s ease-in-out infinite',
+          }}
+        />
+        {/* Blob 2 - Top Right */}
+        <circle
+          cx="85%"
+          cy="25%"
+          r="250"
+          fill="#ffffff"
+          opacity="0.04"
+          filter="url(#blur)"
+          style={{
+            animation: 'float2 25s ease-in-out infinite',
+          }}
+        />
+        {/* Blob 3 - Bottom Center */}
+        <circle
+          cx="50%"
+          cy="80%"
+          r="220"
+          fill="#ffffff"
+          opacity="0.03"
+          filter="url(#blur)"
+          style={{
+            animation: 'float3 22s ease-in-out infinite',
+          }}
+        />
+        {/* Blob 4 - Bottom Left */}
+        <circle
+          cx="10%"
+          cy="70%"
+          r="180"
+          fill="#ffffff"
+          opacity="0.02"
+          filter="url(#blur)"
+          style={{
+            animation: 'float2 28s ease-in-out infinite',
+          }}
+        />
+        {/* Blob 5 - Center Right */}
+        <circle
+          cx="90%"
+          cy="60%"
+          r="240"
+          fill="#ffffff"
+          opacity="0.02"
+          filter="url(#blur)"
+          style={{
+            animation: 'float1 26s ease-in-out infinite',
+          }}
+        />
+      </svg>
+
       <Head>
         <title>Arhaam Hossain - Electrical Engineer</title>
         <meta
