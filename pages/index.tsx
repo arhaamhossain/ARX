@@ -1,7 +1,7 @@
 "use client";
 
 import Head from "next/head";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface Project {
   title: string;
@@ -238,6 +238,11 @@ const technologies = [
 
 export default function Home() {
   const [activeImage, setActiveImage] = useState<{ [key: string]: number }>({});
+
+  // Reset scroll position to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const getActiveImageIndex = (categoryTitle: string, projectTitle: string) => {
     const key = `${categoryTitle}-${projectTitle}`;
