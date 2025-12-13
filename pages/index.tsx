@@ -321,7 +321,7 @@ export default function Home() {
             <a href="#about" className="hover:text-white transition">
               About
             </a>
-            <a href="#projects" className="hover:text-white transition">
+            <a href="#portfolio" className="hover:text-white transition">
               Projects
             </a>
             <a href="#contact" className="hover:text-white transition">
@@ -415,7 +415,7 @@ export default function Home() {
       </section>
 
       {/* Projects Sections */}
-      <section id="projects" className="py-20">
+      <section id="portfolio" className="py-20">
         {categories.map((category) => (
           <div key={category.title} className={`mb-24 py-20 px-6`}>
             <div className="max-w-6xl mx-auto">
