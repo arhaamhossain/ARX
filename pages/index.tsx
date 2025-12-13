@@ -267,17 +267,17 @@ export default function Home() {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 border-b border-gray-800 backdrop-blur-md bg-black/95">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="#" className="text-2xl font-bold text-blue-400">
+          <a href="#" className="text-2xl font-bold text-white">
             <img src="/ARX/arx.png" alt="ARX Logo" className="h-10" />
           </a>
           <div className="hidden md:flex gap-8">
-            <a href="#about" className="hover:text-blue-400 transition">
+            <a href="#about" className="hover:text-white transition">
               About
             </a>
-            <a href="#projects" className="hover:text-blue-400 transition">
+            <a href="#projects" className="hover:text-white transition">
               Projects
             </a>
-            <a href="#contact" className="hover:text-blue-400 transition">
+            <a href="#contact" className="hover:text-white transition">
               Contact
             </a>
           </div>
@@ -288,7 +288,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-6 py-24 md:py-32">
         <div className="mb-12">
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
-            <span className="text-blue-400">Arhaam</span> Hossain
+            <span className="text-white">Arhaam</span> Hossain
           </h1>
           <div className="flex flex-wrap gap-3 text-lg md:text-2xl text-gray-300 mb-8">
             <span>Electrical Engineering</span>
@@ -306,7 +306,7 @@ export default function Home() {
               href="/ARX/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition"
+              className="flex items-center gap-2 text-white hover:text-gray-300 transition"
               title="Download Resume"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -316,7 +316,7 @@ export default function Home() {
             </a>
             <a
               href="mailto:arhaamhossain2004@gmail.com"
-              className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition"
+              className="flex items-center gap-2 text-white hover:text-gray-300 transition"
               title="Send Email"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -328,7 +328,7 @@ export default function Home() {
               href="https://linkedin.com/in/arhaam-hossain"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition"
+              className="flex items-center gap-2 text-white hover:text-gray-300 transition"
               title="LinkedIn Profile"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -350,14 +350,14 @@ export default function Home() {
                 key={tech.category}
                 className="border border-gray-800 rounded-lg p-4 bg-gray-950/50 backdrop-blur"
               >
-                <h3 className="font-semibold text-blue-400 mb-3">
+                <h3 className="font-semibold text-white mb-3">
                   {tech.category}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {tech.items.map((item) => (
                     <span
                       key={item}
-                      className="px-3 py-1 text-sm bg-gray-900 rounded-full text-gray-300 hover:bg-blue-500/20 transition"
+                      className="px-3 py-1 text-sm bg-gray-900 rounded-full text-gray-300 hover:bg-white/10 transition"
                     >
                       {item}
                     </span>
@@ -370,14 +370,15 @@ export default function Home() {
       </section>
 
       {/* Projects Sections */}
-      <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
-        {categories.map((category) => (
-          <div key={category.title} className="mb-24">
-            <h2 className="text-4xl font-bold mb-4 text-blue-400">
-              {category.title}
-            </h2>
-            {category.description && (
-              <p className="text-gray-400 mb-12 text-lg">
+      <section id="projects" className="py-20">
+        {categories.map((category, idx) => (
+          <div key={category.title} className={`mb-24 ${idx % 2 === 0 ? 'bg-black' : 'bg-gray-950/50'} py-20 px-6`}>
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-4xl font-bold mb-4 text-white">
+                {category.title}
+              </h2>
+              {category.description && (
+                <p className="text-gray-400 mb-12 text-lg">
                 {category.description}
               </p>
             )}
@@ -471,7 +472,7 @@ export default function Home() {
 
                   {/* Project Content */}
                   <div className="p-8">
-                    <h3 className="text-2xl font-semibold mb-3 group-hover:text-blue-400 transition">
+                    <h3 className="text-2xl font-semibold mb-3 group-hover:text-white transition">
                       {project.title}
                     </h3>
                     <p className="text-gray-400 mb-6 text-lg">
@@ -483,7 +484,7 @@ export default function Home() {
                         {project.highlights.map((highlight) => (
                           <span
                             key={highlight}
-                            className="px-3 py-1 text-sm bg-blue-500/20 text-blue-300 rounded-full"
+                            className="px-3 py-1 text-sm bg-white/10 text-gray-300 rounded-full"
                           >
                             {highlight}
                           </span>
@@ -497,7 +498,7 @@ export default function Home() {
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-400 hover:text-blue-300 underline transition"
+                          className="text-white hover:text-gray-300 underline transition"
                         >
                           GitHub →
                         </a>
@@ -507,7 +508,7 @@ export default function Home() {
                           href={project.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-400 hover:text-blue-300 underline transition"
+                          className="text-white hover:text-gray-300 underline transition"
                         >
                           Project →
                         </a>
@@ -517,6 +518,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
+            </div>
           </div>
         ))}
       </section>
@@ -524,9 +526,10 @@ export default function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="max-w-6xl mx-auto px-6 py-20 border-t border-gray-800"
+        className="bg-gray-950/50 py-20 border-t border-gray-800"
       >
-        <h2 className="text-4xl font-bold mb-8 text-blue-400">About</h2>
+        <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-4xl font-bold mb-8 text-white">About</h2>
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
             <p>
@@ -548,32 +551,34 @@ export default function Home() {
           </div>
           <div className="space-y-4">
             <div className="border border-gray-800 rounded-lg p-6 bg-gray-950/50 backdrop-blur">
-              <h3 className="text-blue-400 font-semibold mb-4">Quick Stats</h3>
+              <h3 className="text-white font-semibold mb-4">Quick Stats</h3>
               <div className="space-y-3 text-gray-400">
                 <div className="flex justify-between">
                   <span>Projects Completed</span>
-                  <span className="text-blue-400 font-semibold">20+</span>
+                  <span className="text-white font-semibold">20+</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Technologies</span>
-                  <span className="text-blue-400 font-semibold">15+</span>
+                  <span className="text-white font-semibold">15+</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Open Source Contributions</span>
-                  <span className="text-blue-400 font-semibold">50+</span>
+                  <span className="text-white font-semibold">50+</span>
                 </div>
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
       {/* Contact Section */}
       <section
         id="contact"
-        className="max-w-6xl mx-auto px-6 py-20 border-t border-gray-800"
+        className="py-20 border-t border-gray-800"
       >
-        <h2 className="text-4xl font-bold mb-8 text-blue-400">Get in Touch</h2>
+        <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-4xl font-bold mb-8 text-white">Get in Touch</h2>
         <p className="text-gray-400 text-lg mb-8 max-w-2xl">
           I&apos;m always interested in discussing new projects, engineering challenges,
           and opportunities to collaborate.
@@ -583,7 +588,7 @@ export default function Home() {
             href="https://github.com/arhaamhossain"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 border border-blue-400 text-blue-400 rounded-lg hover:bg-blue-400/10 transition"
+            className="px-6 py-3 border border-white text-white rounded-lg hover:bg-blue-400/10 transition"
           >
             GitHub
           </a>
@@ -591,13 +596,13 @@ export default function Home() {
             href="https://linkedin.com/in/arhaam-hossain"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 border border-blue-400 text-blue-400 rounded-lg hover:bg-blue-400/10 transition"
+            className="px-6 py-3 border border-white text-white rounded-lg hover:bg-blue-400/10 transition"
           >
             LinkedIn
           </a>
           <a
             href="mailto:arhaamhossain2004@gmail.com"
-            className="px-6 py-3 border border-blue-400 text-blue-400 rounded-lg hover:bg-blue-400/10 transition"
+            className="px-6 py-3 border border-white text-white rounded-lg hover:bg-blue-400/10 transition"
           >
             Email
           </a>
@@ -613,4 +618,5 @@ export default function Home() {
     </div>
   );
 }
+
 
