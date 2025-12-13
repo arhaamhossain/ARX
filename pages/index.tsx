@@ -264,7 +264,7 @@ export default function Home() {
       <svg className="fixed inset-0 -z-10 w-full h-full">
         <defs>
           <filter id="blur">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="40" />
+            <feGaussianBlur in="SourceGraphic" stdDeviation="60" />
           </filter>
         </defs>
         {/* Blob 1 - Top Left */}
@@ -273,7 +273,7 @@ export default function Home() {
           cy="20%"
           r="200"
           fill="#ffffff"
-          opacity="0.08"
+          opacity="0.02"
           filter="url(#blur)"
           style={{
             animation: 'float1 20s ease-in-out infinite',
@@ -285,7 +285,7 @@ export default function Home() {
           cy="25%"
           r="250"
           fill="#ffffff"
-          opacity="0.1"
+          opacity="0.025"
           filter="url(#blur)"
           style={{
             animation: 'float2 25s ease-in-out infinite',
@@ -297,7 +297,7 @@ export default function Home() {
           cy="80%"
           r="220"
           fill="#ffffff"
-          opacity="0.07"
+          opacity="0.02"
           filter="url(#blur)"
           style={{
             animation: 'float3 22s ease-in-out infinite',
@@ -309,7 +309,7 @@ export default function Home() {
           cy="70%"
           r="180"
           fill="#ffffff"
-          opacity="0.06"
+          opacity="0.015"
           filter="url(#blur)"
           style={{
             animation: 'float2 28s ease-in-out infinite',
@@ -321,7 +321,7 @@ export default function Home() {
           cy="60%"
           r="240"
           fill="#ffffff"
-          opacity="0.07"
+          opacity="0.02"
           filter="url(#blur)"
           style={{
             animation: 'float1 26s ease-in-out infinite',
@@ -333,7 +333,7 @@ export default function Home() {
           cy="40%"
           r="210"
           fill="#ffffff"
-          opacity="0.05"
+          opacity="0.015"
           filter="url(#blur)"
           style={{
             animation: 'float3 24s ease-in-out infinite',
@@ -345,7 +345,7 @@ export default function Home() {
           cy="35%"
           r="190"
           fill="#ffffff"
-          opacity="0.06"
+          opacity="0.015"
           filter="url(#blur)"
           style={{
             animation: 'float1 23s ease-in-out infinite',
