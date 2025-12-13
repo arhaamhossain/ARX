@@ -177,12 +177,12 @@ const categories: ProjectCategory[] = [
 
 const technologies = [
   { category: "Specializations", items: ["VLSI", "PCB Design", "Electronics", "Robotics"] },
-  { category: "Developer Tools", items: ["KiCAD", "Altium Designer", "MATLAB", "LTspice"] },
+  { category: "Developer Tools", items: ["KiCAD", "Altium Designer", "Cadence Virtuoso", "LTspice"] },
   {
     category: "Programming",
-    items: ["C/C++", "Python", "Verilog", "TypeScript", "React"],
+    items: ["C/C++", "Python", "SystemVerilog", "MATLAB", "VBA"],
   },
-  { category: "Lab Tools", items: ["Oscilloscope", "Logic Analyzer", "Power Supply", "Spectrum Analyzer"] },
+  { category: "Lab Tools", items: ["Oscilloscope", "Logic Analyzer", "Power Supply", "DMM"] },
 ];
 
 export default function Home() {
