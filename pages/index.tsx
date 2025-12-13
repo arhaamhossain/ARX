@@ -438,7 +438,7 @@ export default function Home() {
                 >
                   {/* Project Image Carousel */}
                   {project.images && project.images.length > 0 && (
-                    <div className="relative bg-gray-950 overflow-hidden aspect-video">
+                    <div className="relative bg-gray-950 overflow-hidden aspect-video max-h-80">
                       <img
                         src={
                           project.images[
@@ -518,7 +518,7 @@ export default function Home() {
                   )}
 
                   {/* Project Content */}
-                  <div className="p-8">
+                  <div className="p-6">
                     <h3 className="text-2xl font-semibold mb-3 group-hover:text-white transition">
                       {project.title}
                     </h3>
