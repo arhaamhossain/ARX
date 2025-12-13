@@ -176,13 +176,13 @@ const categories: ProjectCategory[] = [
 ];
 
 const technologies = [
-  { category: "Microcontrollers", items: ["STM32", "Arduino", "ESP32", "nRF52"] },
-  { category: "Design Tools", items: ["KiCAD", "Altium Designer", "MATLAB", "Fusion 360"] },
+  { category: "Specializations", items: ["VLSI", "PCB Design", "Electronics", "Robotics"] },
+  { category: "Developer Tools", items: ["KiCAD", "Altium Designer", "MATLAB", "LTspice"] },
   {
     category: "Programming",
     items: ["C/C++", "Python", "Verilog", "TypeScript", "React"],
   },
-  { category: "Protocols", items: ["CAN", "I2C", "SPI", "Bluetooth", "WiFi"] },
+  { category: "Lab Tools", items: ["Oscilloscope", "Logic Analyzer", "Power Supply", "Spectrum Analyzer"] },
 ];
 
 export default function Home() {
@@ -341,8 +341,6 @@ export default function Home() {
             <span>Electrical Engineering</span>
             <span>•</span>
             <span>Stony Brook University</span>
-            <span>•</span>
-            <span>Robotics</span>
             <span>•</span>
             <span>Research</span>
           </div>
