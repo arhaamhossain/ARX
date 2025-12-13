@@ -173,57 +173,6 @@ const categories: ProjectCategory[] = [
       },
     ],
   },
-  {
-    title: "Front-End Development",
-    description: "Web applications and interactive tools",
-    projects: [
-      {
-        title: "Portfolio Website",
-        description:
-          "Modern responsive portfolio built with Next.js and Tailwind CSS.",
-        highlights: [
-          "Next.js 15",
-          "Tailwind CSS",
-          "Responsive design",
-          "SEO optimized",
-        ],
-        github: "https://github.com/arhaamhossain",
-        images: [
-          "https://via.placeholder.com/600x400?text=Portfolio+Site",
-        ],
-      },
-      {
-        title: "Engineering Calculator Tool",
-        description:
-          "Web-based tool for electrical engineering calculations and simulations.",
-        highlights: [
-          "React components",
-          "Canvas rendering",
-          "Real-time updates",
-          "Data visualization",
-        ],
-        github: "https://github.com/arhaamhossain",
-        images: [
-          "https://via.placeholder.com/600x400?text=Calculator+Tool",
-        ],
-      },
-      {
-        title: "3D PCB Viewer",
-        description:
-          "Interactive 3D visualization tool for PCB designs and component placement.",
-        highlights: [
-          "Three.js",
-          "3D rendering",
-          "Gerber file parsing",
-          "Component library",
-        ],
-        github: "https://github.com/arhaamhossain",
-        images: [
-          "https://via.placeholder.com/600x400?text=3D+PCB+Viewer",
-        ],
-      },
-    ],
-  },
 ];
 
 const technologies = [
