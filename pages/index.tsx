@@ -273,7 +273,7 @@ export default function Home() {
           cy="20%"
           r="200"
           fill="#ffffff"
-          opacity="0.03"
+          opacity="0.08"
           filter="url(#blur)"
           style={{
             animation: 'float1 20s ease-in-out infinite',
@@ -285,7 +285,7 @@ export default function Home() {
           cy="25%"
           r="250"
           fill="#ffffff"
-          opacity="0.04"
+          opacity="0.1"
           filter="url(#blur)"
           style={{
             animation: 'float2 25s ease-in-out infinite',
@@ -297,7 +297,7 @@ export default function Home() {
           cy="80%"
           r="220"
           fill="#ffffff"
-          opacity="0.03"
+          opacity="0.07"
           filter="url(#blur)"
           style={{
             animation: 'float3 22s ease-in-out infinite',
@@ -309,7 +309,7 @@ export default function Home() {
           cy="70%"
           r="180"
           fill="#ffffff"
-          opacity="0.02"
+          opacity="0.06"
           filter="url(#blur)"
           style={{
             animation: 'float2 28s ease-in-out infinite',
@@ -321,10 +321,34 @@ export default function Home() {
           cy="60%"
           r="240"
           fill="#ffffff"
-          opacity="0.02"
+          opacity="0.07"
           filter="url(#blur)"
           style={{
             animation: 'float1 26s ease-in-out infinite',
+          }}
+        />
+        {/* Blob 6 - Middle Left */}
+        <circle
+          cx="5%"
+          cy="40%"
+          r="210"
+          fill="#ffffff"
+          opacity="0.05"
+          filter="url(#blur)"
+          style={{
+            animation: 'float3 24s ease-in-out infinite',
+          }}
+        />
+        {/* Blob 7 - Middle Right */}
+        <circle
+          cx="95%"
+          cy="35%"
+          r="190"
+          fill="#ffffff"
+          opacity="0.06"
+          filter="url(#blur)"
+          style={{
+            animation: 'float1 23s ease-in-out infinite',
           }}
         />
       </svg>
