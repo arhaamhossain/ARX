@@ -293,14 +293,42 @@ export default function Home() {
           <div className="flex flex-wrap gap-3 text-lg md:text-2xl text-gray-300 mb-8">
             <span>Electrical Engineering</span>
             <span>•</span>
-            <span>Embedded Systems</span>
+            <span>Stony Brook University</span>
             <span>•</span>
             <span>Robotics</span>
+            <span>•</span>
+            <span>Research</span>
           </div>
-          <p className="text-gray-400 text-lg max-w-2xl">
+          <p className="text-gray-400 text-lg max-w-2xl mb-8">
             Engineering with modern tools and open-source principles. Designing
             high-performance hardware and software systems.
           </p>
+          
+          {/* Links Section */}
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 underline transition"
+            >
+              Resume
+            </a>
+            <a
+              href="mailto:arhaamhossain2004@gmail.com"
+              className="text-blue-400 hover:text-blue-300 underline transition"
+            >
+              Email
+            </a>
+            <a
+              href="https://linkedin.com/in/arhaam-hossain"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 underline transition"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
 
         {/* Technology Stack */}
