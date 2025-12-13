@@ -268,7 +268,7 @@ export default function Home() {
       <nav className="sticky top-0 z-50 border-b border-slate-700/50 backdrop-blur-md bg-slate-950/50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <a href="#" className="text-2xl font-bold text-blue-400">
-            <img src="/arx.png" alt="ARX Logo" className="h-10" />
+            <img src="/ARX/arx.png" alt="ARX Logo" className="h-10" />
           </a>
           <div className="hidden md:flex gap-8">
             <a href="#about" className="hover:text-blue-400 transition">
