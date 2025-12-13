@@ -288,7 +288,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-6 py-24 md:py-32">
         <div className="mb-12">
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
-            Hello, I'm <span className="text-blue-400">Arhaam</span> _
+            Hello, I&apos;m <span className="text-blue-400">Arhaam</span> _
           </h1>
           <div className="flex flex-wrap gap-3 text-lg md:text-2xl text-gray-300 mb-8">
             <span>Electrical Engineering</span>
@@ -494,7 +494,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
             <p>
-              I'm an Electrical Engineer passionate about building innovative
+              I&apos;m an Electrical Engineer passionate about building innovative
               hardware and software systems. My work spans from PCB design and
               microcontroller firmware to robotics platforms and web
               applications.
@@ -505,7 +505,7 @@ export default function Home() {
               attention to reliability, scalability, and maintainability.
             </p>
             <p>
-              When I'm not engineering, I enjoy contributing to open-source
+              When I&apos;m not engineering, I enjoy contributing to open-source
               projects and staying updated with emerging technologies in
               embedded systems and robotics.
             </p>
@@ -539,7 +539,7 @@ export default function Home() {
       >
         <h2 className="text-4xl font-bold mb-8 text-blue-400">Get in Touch</h2>
         <p className="text-gray-400 text-lg mb-8 max-w-2xl">
-          I'm always interested in discussing new projects, engineering challenges,
+          I&apos;m always interested in discussing new projects, engineering challenges,
           and opportunities to collaborate.
         </p>
         <div className="flex flex-wrap gap-6">
@@ -577,3 +577,4 @@ export default function Home() {
     </div>
   );
 }
+
