@@ -602,10 +602,11 @@ export default function Home() {
           </a>
           <a
             href="mailto:arhaamhossain2004@gmail.com"
-            className="px-6 py-3 border border-white text-white rounded-lg hover:bg-blue-400/10 transition"
+            className="px-6 py-3 border border-white text-white rounded-lg hover:bg-white/10 transition"
           >
             Email
           </a>
+        </div>
         </div>
       </section>
 
