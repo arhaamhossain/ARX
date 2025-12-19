@@ -179,55 +179,27 @@ const softwareTools = [
   {
     name: "KiCAD",
     url: "https://kicad.org/",
-    logo: (
-      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="10" y="10" width="80" height="80" stroke="#3b82f6" strokeWidth="2" rx="8" />
-        <path d="M30 50 L50 30 L70 50 M50 30 V70" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    )
+    logoUrl: "https://kicad.org/assets/images/kicad_logo.png"
   },
   {
     name: "Altium Designer",
     url: "https://www.altium.com/",
-    logo: (
-      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="40" stroke="#f59e0b" strokeWidth="2" />
-        <path d="M50 20 L70 40 L60 50 L70 60 L50 80 L30 60 L40 50 L30 40 Z" fill="#f59e0b" opacity="0.3" />
-      </svg>
-    )
+    logoUrl: "https://www.altium.com/sites/default/files/styles/thumbnail/public/2023-09/altium-logo-light-blue.png"
   },
   {
     name: "Cadence Virtuoso",
     url: "https://www.cadence.com/",
-    logo: (
-      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 50 Q35 20 50 50 T80 50" stroke="#ec4899" strokeWidth="2" fill="none" />
-        <circle cx="50" cy="50" r="3" fill="#ec4899" />
-      </svg>
-    )
+    logoUrl: "https://www.cadence.com/content/dam/cadence-www/global/en_US/images/cadence-logo.png"
   },
   {
     name: "MATLAB",
     url: "https://www.mathworks.com/products/matlab.html",
-    logo: (
-      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="20" y="20" width="60" height="60" stroke="#8b5cf6" strokeWidth="2" />
-        <line x1="30" y1="30" x2="70" y2="70" stroke="#8b5cf6" strokeWidth="1.5" />
-        <line x1="70" y1="30" x2="30" y2="70" stroke="#8b5cf6" strokeWidth="1.5" />
-      </svg>
-    )
+    logoUrl: "https://www.mathworks.com/matlabcentral/answers/images/matlab_logo.png"
   },
   {
     name: "LTspice",
     url: "https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html",
-    logo: (
-      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M30 60 L50 20 L70 60" stroke="#10b981" strokeWidth="2" fill="none" />
-        <circle cx="50" cy="20" r="3" fill="#10b981" />
-        <circle cx="30" cy="60" r="3" fill="#10b981" />
-        <circle cx="70" cy="60" r="3" fill="#10b981" />
-      </svg>
-    )
+    logoUrl: "https://www.analog.com/media/en/web-assets/images/analog-devices-logo.svg"
   }
 ];
 
@@ -455,9 +427,14 @@ export default function Home() {
                 className="flex flex-col items-center gap-3 p-4 rounded-lg border border-gray-800 bg-gray-950/50 backdrop-blur hover:border-blue-500/50 hover:bg-gray-900/50 transition group"
                 title={`Visit ${tool.name}`}
               >
-                <div className="text-gray-400 group-hover:text-white transition">
-                  {tool.logo}
-                </div>
+                <img 
+                  src={tool.logoUrl} 
+                  alt={`${tool.name} logo`}
+                  className="w-12 h-12 object-contain filter brightness-0 invert opacity-70 group-hover:opacity-100 transition"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
                 <span className="text-sm text-gray-300 text-center group-hover:text-white transition">
                   {tool.name}
                 </span>
