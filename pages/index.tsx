@@ -300,6 +300,16 @@ export default function Home() {
             animation: 'float1 23s ease-in-out infinite',
           }}
         />
+        
+        {/* Decorative stars */}
+        <circle cx="10%" cy="10%" r="1" fill="#ffffff" opacity="0.8" style={{ animation: 'twinkle 3s ease-in-out infinite' }} />
+        <circle cx="85%" cy="15%" r="0.8" fill="#ffffff" opacity="0.6" style={{ animation: 'twinkle 2.5s ease-in-out infinite 0.5s' }} />
+        <circle cx="20%" cy="50%" r="1.2" fill="#ffffff" opacity="0.7" style={{ animation: 'twinkle 3.5s ease-in-out infinite 1s' }} />
+        <circle cx="92%" cy="45%" r="0.9" fill="#ffffff" opacity="0.5" style={{ animation: 'twinkle 2.8s ease-in-out infinite 0.3s' }} />
+        <circle cx="15%" cy="80%" r="1" fill="#ffffff" opacity="0.6" style={{ animation: 'twinkle 3.2s ease-in-out infinite 0.7s' }} />
+        <circle cx="88%" cy="70%" r="0.7" fill="#ffffff" opacity="0.8" style={{ animation: 'twinkle 2.9s ease-in-out infinite 0.2s' }} />
+        <circle cx="50%" cy="20%" r="0.8" fill="#ffffff" opacity="0.5" style={{ animation: 'twinkle 3.3s ease-in-out infinite 0.9s' }} />
+        <circle cx="25%" cy="70%" r="1.1" fill="#ffffff" opacity="0.7" style={{ animation: 'twinkle 2.7s ease-in-out infinite 0.4s' }} />
       </svg>
 
       <Head>
@@ -432,7 +442,7 @@ export default function Home() {
               {category.projects.map((project) => (
                 <div
                   key={project.title}
-                  className="border border-gray-800 rounded-lg overflow-hidden bg-gray-950/50 backdrop-blur hover:border-blue-500/50 transition group"
+                  className="border border-gray-800 rounded-lg overflow-hidden bg-gray-950/50 backdrop-blur hover:border-blue-500/50 transition group fade-in-up"
                 >
                   {/* Project Image Carousel */}
                   {project.images && project.images.length > 0 && (
