@@ -123,7 +123,7 @@ const categories: ProjectCategory[] = [
     ],
   },
   {
-    title: "Robotics & Integration",
+    title: "Robotics & Research",
     description: "Complete autonomous systems and robotic platforms",
     projects: [
       {
