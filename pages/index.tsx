@@ -179,27 +179,57 @@ const softwareTools = [
   {
     name: "KiCAD",
     url: "https://kicad.org/",
-    logoUrl: "https://kicad.org/assets/images/kicad_logo.png"
+    logo: (
+      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 10 L85 35 L85 65 L50 90 L15 65 L15 35 Z" stroke="currentColor" strokeWidth="3" fill="none" />
+        <path d="M50 30 L65 40 L65 60 L50 70 L35 60 L35 40 Z" fill="currentColor" />
+      </svg>
+    )
   },
   {
     name: "Altium Designer",
     url: "https://www.altium.com/",
-    logoUrl: "https://www.altium.com/sites/default/files/styles/thumbnail/public/2023-09/altium-logo-light-blue.png"
+    logo: (
+      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="35" stroke="currentColor" strokeWidth="2.5" />
+        <path d="M50 25 L72 38 L65 58 L35 58 L28 38 Z" fill="currentColor" />
+        <circle cx="35" cy="65" r="4" fill="currentColor" />
+        <circle cx="50" cy="72" r="4" fill="currentColor" />
+        <circle cx="65" cy="65" r="4" fill="currentColor" />
+      </svg>
+    )
   },
   {
     name: "Cadence Virtuoso",
     url: "https://www.cadence.com/",
-    logoUrl: "https://www.cadence.com/content/dam/cadence-www/global/en_US/images/cadence-logo.png"
+    logo: (
+      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M25 50 Q40 30 50 50 Q60 70 75 50" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" />
+        <circle cx="25" cy="50" r="3" fill="currentColor" />
+        <circle cx="50" cy="50" r="3" fill="currentColor" />
+        <circle cx="75" cy="50" r="3" fill="currentColor" />
+      </svg>
+    )
   },
   {
     name: "MATLAB",
     url: "https://www.mathworks.com/products/matlab.html",
-    logoUrl: "https://www.mathworks.com/matlabcentral/answers/images/matlab_logo.png"
+    logo: (
+      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="15" y="15" width="70" height="70" stroke="currentColor" strokeWidth="2.5" rx="5" />
+        <path d="M30 70 L40 40 L50 55 L65 25 L75 45" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    )
   },
   {
     name: "LTspice",
     url: "https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html",
-    logoUrl: "https://www.analog.com/media/en/web-assets/images/analog-devices-logo.svg"
+    logo: (
+      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 15 L75 40 L65 50 L75 60 L50 85 L25 60 L35 50 L25 40 Z" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.3" />
+        <path d="M50 15 L75 40 L65 50 L75 60 L50 85 L25 60 L35 50 L25 40 Z" stroke="currentColor" strokeWidth="2.5" fill="none" />
+      </svg>
+    )
   }
 ];
 
@@ -427,14 +457,9 @@ export default function Home() {
                 className="flex flex-col items-center gap-3 p-4 rounded-lg border border-gray-800 bg-gray-950/50 backdrop-blur hover:border-blue-500/50 hover:bg-gray-900/50 transition group"
                 title={`Visit ${tool.name}`}
               >
-                <img 
-                  src={tool.logoUrl} 
-                  alt={`${tool.name} logo`}
-                  className="w-12 h-12 object-contain filter brightness-0 invert opacity-70 group-hover:opacity-100 transition"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
+                <div className="text-gray-400 group-hover:text-white transition">
+                  {tool.logo}
+                </div>
                 <span className="text-sm text-gray-300 text-center group-hover:text-white transition">
                   {tool.name}
                 </span>
