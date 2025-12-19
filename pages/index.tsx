@@ -179,27 +179,27 @@ const softwareTools = [
   {
     name: "KiCAD",
     url: "https://kicad.org/",
-    logoPath: "/ARX/kicad-logo.png"
+    logoPath: "/ARX/kicadlogo.jpeg"
   },
   {
     name: "Altium Designer",
     url: "https://www.altium.com/",
-    logoPath: "/ARX/altium-logo.png"
+    logoPath: "/ARX/altiumlogo.png"
   },
   {
     name: "Cadence Virtuoso",
     url: "https://www.cadence.com/",
-    logoPath: "/ARX/cadence-logo.png"
+    logoPath: "/ARX/cadencelogo.jpeg"
   },
   {
     name: "MATLAB",
     url: "https://www.mathworks.com/products/matlab.html",
-    logoPath: "/ARX/matlab-logo.png"
+    logoPath: "/ARX/matlablogo.png"
   },
   {
     name: "LTspice",
     url: "https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html",
-    logoPath: "/ARX/ltspice-logo.png"
+    logoPath: "/ARX/ltspicelogo.png"
   }
 ];
 
