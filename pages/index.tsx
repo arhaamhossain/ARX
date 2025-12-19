@@ -175,14 +175,60 @@ const categories: ProjectCategory[] = [
   },
 ];
 
-const technologies = [
-  { category: "Specializations", items: ["VLSI", "PCB Design", "Electronics", "Robotics"] },
-  { category: "Developer Tools", items: ["KiCAD", "Altium Designer", "Cadence Virtuoso", "LTspice"] },
+const softwareTools = [
   {
-    category: "Programming",
-    items: ["C/C++", "Python", "SystemVerilog", "MATLAB", "VBA"],
+    name: "KiCAD",
+    url: "https://kicad.org/",
+    logo: (
+      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="80" height="80" stroke="#3b82f6" strokeWidth="2" rx="8" />
+        <path d="M30 50 L50 30 L70 50 M50 30 V70" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    )
   },
-  { category: "Lab Tools", items: ["Oscilloscope", "Logic Analyzer", "Power Supply", "DMM"] },
+  {
+    name: "Altium Designer",
+    url: "https://www.altium.com/",
+    logo: (
+      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" stroke="#f59e0b" strokeWidth="2" />
+        <path d="M50 20 L70 40 L60 50 L70 60 L50 80 L30 60 L40 50 L30 40 Z" fill="#f59e0b" opacity="0.3" />
+      </svg>
+    )
+  },
+  {
+    name: "Cadence Virtuoso",
+    url: "https://www.cadence.com/",
+    logo: (
+      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 50 Q35 20 50 50 T80 50" stroke="#ec4899" strokeWidth="2" fill="none" />
+        <circle cx="50" cy="50" r="3" fill="#ec4899" />
+      </svg>
+    )
+  },
+  {
+    name: "MATLAB",
+    url: "https://www.mathworks.com/products/matlab.html",
+    logo: (
+      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="20" y="20" width="60" height="60" stroke="#8b5cf6" strokeWidth="2" />
+        <line x1="30" y1="30" x2="70" y2="70" stroke="#8b5cf6" strokeWidth="1.5" />
+        <line x1="70" y1="30" x2="30" y2="70" stroke="#8b5cf6" strokeWidth="1.5" />
+      </svg>
+    )
+  },
+  {
+    name: "LTspice",
+    url: "https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html",
+    logo: (
+      <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 60 L50 20 L70 60" stroke="#10b981" strokeWidth="2" fill="none" />
+        <circle cx="50" cy="20" r="3" fill="#10b981" />
+        <circle cx="30" cy="60" r="3" fill="#10b981" />
+        <circle cx="70" cy="60" r="3" fill="#10b981" />
+      </svg>
+    )
+  }
 ];
 
 export default function Home() {
@@ -394,31 +440,28 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Technology Stack */}
+        {/* Software Tools */}
         <div className="mt-16">
           <h2 className="text-xl font-semibold text-gray-300 mb-8">
             Engineering with
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {technologies.map((tech) => (
-              <div
-                key={tech.category}
-                className="border border-gray-800 rounded-lg p-4 bg-gray-950/50 backdrop-blur"
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            {softwareTools.map((tool) => (
+              <a
+                key={tool.name}
+                href={tool.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center gap-3 p-4 rounded-lg border border-gray-800 bg-gray-950/50 backdrop-blur hover:border-blue-500/50 hover:bg-gray-900/50 transition group"
+                title={`Visit ${tool.name}`}
               >
-                <h3 className="font-semibold text-white mb-3">
-                  {tech.category}
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {tech.items.map((item) => (
-                    <span
-                      key={item}
-                      className="px-3 py-1 text-sm bg-gray-900 rounded-full text-gray-300 hover:bg-white/10 transition"
-                    >
-                      {item}
-                    </span>
-                  ))}
+                <div className="text-gray-400 group-hover:text-white transition">
+                  {tool.logo}
                 </div>
-              </div>
+                <span className="text-sm text-gray-300 text-center group-hover:text-white transition">
+                  {tool.name}
+                </span>
+              </a>
             ))}
           </div>
         </div>
