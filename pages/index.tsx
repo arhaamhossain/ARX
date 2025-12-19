@@ -310,6 +310,20 @@ export default function Home() {
         <circle cx="88%" cy="70%" r="0.7" fill="#ffffff" opacity="0.8" style={{ animation: 'twinkle 2.9s ease-in-out infinite 0.2s' }} />
         <circle cx="50%" cy="20%" r="0.8" fill="#ffffff" opacity="0.5" style={{ animation: 'twinkle 3.3s ease-in-out infinite 0.9s' }} />
         <circle cx="25%" cy="70%" r="1.1" fill="#ffffff" opacity="0.7" style={{ animation: 'twinkle 2.7s ease-in-out infinite 0.4s' }} />
+        
+        {/* Comet animations */}
+        <g style={{ animation: 'comet-left-to-right 6s ease-in 1s infinite' }}>
+          <line x1="0" y1="5%" x2="40" y2="5%" stroke="#60a5fa" strokeWidth="2" opacity="0.8" />
+          <circle cx="0" cy="5%" r="3" fill="#93c5fd" opacity="0.9" />
+        </g>
+        <g style={{ animation: 'comet-right-to-left 7s ease-in 3s infinite' }}>
+          <line x1="100%" y1="8%" x2="calc(100% - 40px)" y2="8%" stroke="#3b82f6" strokeWidth="1.5" opacity="0.7" />
+          <circle cx="100%" cy="8%" r="2.5" fill="#60a5fa" opacity="0.8" />
+        </g>
+        <g style={{ animation: 'comet-left-to-right 8s ease-in 5s infinite' }}>
+          <line x1="0" y1="12%" x2="50" y2="12%" stroke="#93c5fd" strokeWidth="1" opacity="0.6" />
+          <circle cx="0" cy="12%" r="2" fill="#60a5fa" opacity="0.7" />
+        </g>
       </svg>
 
       <Head>
