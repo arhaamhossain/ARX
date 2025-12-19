@@ -344,10 +344,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-6 py-24 md:py-32">
         <div className="mb-12">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 gradient-text">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 gradient-text fade-in-up">
             <span className="bg-gradient-to-r from-white to-white bg-clip-text text-transparent">Arhaam Hossain</span>
           </h1>
-          <div className="flex flex-wrap gap-3 text-lg md:text-2xl text-gray-300 mb-8 font-medium">
+          <div className="flex flex-wrap gap-3 text-lg md:text-2xl text-gray-300 mb-8 font-medium fade-in-up stagger-1">
             <span>Electrical Engineering</span>
             <span>•</span>
             <span>Stony Brook University</span>
@@ -356,7 +356,7 @@ export default function Home() {
           </div>
           
           {/* Links Section with Icons */}
-          <div className="flex flex-wrap gap-6 items-center mt-8">
+          <div className="flex flex-wrap gap-6 items-center mt-8 fade-in-up stagger-2">
             <a
               href="/ARX/resume.pdf"
               target="_blank"
