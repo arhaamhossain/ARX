@@ -413,7 +413,7 @@ export default function Home() {
         </div>
 
         {/* Software Tools */}
-        <div className="mt-12">
+        <div className="mt-12 fade-in-up stagger-3">
           <h2 className="text-lg font-semibold text-gray-400 mb-6">
             Engineering with
           </h2>
