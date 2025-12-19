@@ -413,28 +413,25 @@ export default function Home() {
         </div>
 
         {/* Software Tools */}
-        <div className="mt-16">
-          <h2 className="text-xl font-semibold text-gray-300 mb-8">
+        <div className="mt-12">
+          <h2 className="text-lg font-semibold text-gray-400 mb-6">
             Engineering with
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+          <div className="flex flex-wrap gap-4 items-center">
             {softwareTools.map((tool) => (
               <a
                 key={tool.name}
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center gap-3 p-4 rounded-lg border border-gray-800 bg-gray-950/50 backdrop-blur hover:border-blue-500/50 hover:bg-gray-900/50 transition group"
+                className="flex items-center justify-center hover:opacity-100 opacity-60 transition"
                 title={`Visit ${tool.name}`}
               >
                 <img 
                   src={tool.logoPath} 
                   alt={`${tool.name} logo`}
-                  className="w-12 h-12 object-contain opacity-70 group-hover:opacity-100 transition"
+                  className="h-8 object-contain"
                 />
-                <span className="text-sm text-gray-300 text-center group-hover:text-white transition">
-                  {tool.name}
-                </span>
               </a>
             ))}
           </div>
