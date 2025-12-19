@@ -159,18 +159,18 @@ html {
 }
 
 .fade-in-up {
-  animation: fadeInUp 0.4s ease-out forwards;
+  animation: fadeInUp 0.5s ease-out forwards;
 }
 
 /* Stagger animation delays */
 .stagger-1 {
-  animation-delay: 0.05s;
-}
-
-.stagger-2 {
   animation-delay: 0.1s;
 }
 
+.stagger-2 {
+  animation-delay: 0.2s;
+}
+
 .stagger-3 {
-  animation-delay: 0.15s;
+  animation-delay: 0.3s;
 }
