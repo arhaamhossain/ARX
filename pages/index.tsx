@@ -176,85 +176,85 @@ export default function Home() {
             <feGaussianBlur in="SourceGraphic" stdDeviation="60" />
           </filter>
         </defs>
-        {/* Blob 1 - Top Left */}
+        {/* Blob 1 - Top Left - Light Gray */}
         <circle
           cx="15%"
           cy="20%"
           r="200"
-          fill="#ffffff"
-          opacity="0.02"
+          fill="#4a4a4a"
+          opacity="0.04"
           filter="url(#blur)"
           style={{
             animation: 'float1 20s ease-in-out infinite',
           }}
         />
-        {/* Blob 2 - Top Right */}
+        {/* Blob 2 - Top Right - Medium Gray */}
         <circle
           cx="85%"
           cy="25%"
           r="250"
-          fill="#ffffff"
-          opacity="0.025"
+          fill="#333333"
+          opacity="0.035"
           filter="url(#blur)"
           style={{
             animation: 'float2 25s ease-in-out infinite',
           }}
         />
-        {/* Blob 3 - Bottom Center */}
+        {/* Blob 3 - Bottom Center - Dark Gray */}
         <circle
           cx="50%"
           cy="80%"
           r="220"
-          fill="#ffffff"
-          opacity="0.02"
+          fill="#2a2a2a"
+          opacity="0.03"
           filter="url(#blur)"
           style={{
             animation: 'float3 22s ease-in-out infinite',
           }}
         />
-        {/* Blob 4 - Bottom Left */}
+        {/* Blob 4 - Bottom Left - Light Gray */}
         <circle
           cx="10%"
           cy="70%"
           r="180"
-          fill="#ffffff"
-          opacity="0.015"
+          fill="#3d3d3d"
+          opacity="0.03"
           filter="url(#blur)"
           style={{
             animation: 'float2 28s ease-in-out infinite',
           }}
         />
-        {/* Blob 5 - Center Right */}
+        {/* Blob 5 - Center Right - Medium Gray */}
         <circle
           cx="90%"
           cy="60%"
           r="240"
-          fill="#ffffff"
-          opacity="0.02"
+          fill="#424242"
+          opacity="0.035"
           filter="url(#blur)"
           style={{
             animation: 'float1 26s ease-in-out infinite',
           }}
         />
-        {/* Blob 6 - Middle Left */}
+        {/* Blob 6 - Middle Left - Dark Gray */}
         <circle
           cx="5%"
           cy="40%"
           r="210"
-          fill="#ffffff"
-          opacity="0.015"
+          fill="#2f2f2f"
+          opacity="0.025"
           filter="url(#blur)"
           style={{
             animation: 'float3 24s ease-in-out infinite',
           }}
         />
-        {/* Blob 7 - Middle Right */}
+        {/* Blob 7 - Middle Right - Light Gray */}
         <circle
           cx="95%"
           cy="35%"
           r="190"
-          fill="#ffffff"
-          opacity="0.015"
+          fill="#3a3a3a"
+          opacity="0.03"
           filter="url(#blur)"
           style={{
             animation: 'float1 23s ease-in-out infinite',
