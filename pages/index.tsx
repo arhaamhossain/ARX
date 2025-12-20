@@ -142,11 +142,6 @@ const softwareTools = [
     name: "MATLAB",
     url: "https://www.mathworks.com/products/matlab.html",
     logoPath: "/ARX/matlablogo.png"
-  },
-  {
-    name: "LTspice",
-    url: "https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html",
-    logoPath: "/ARX/ltspicelogo.png"
   }
 ];
 
