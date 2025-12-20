@@ -23,46 +23,27 @@ const categories: ProjectCategory[] = [
     title: "Electrical Engineering",
     projects: [
       {
-        title: "Custom PCB Motor Controller",
-        description:
-          "Designed and fabricated a dual-motor controller board with current sensing and thermal protection.",
-        highlights: [
-          "STM32 microcontroller",
-          "KiCAD PCB design",
-          "Buck-boost topology",
-          "Current sensing circuit",
-          "Thermal management",
-        ],
+        title: "Project 1",
+        description: "Project 1 Description",
+        highlights: [],
         github: "https://github.com/arhaamhossain",
         images: [
           "https://via.placeholder.com/600x400?text=Motor+Controller+PCB",
         ],
       },
       {
-        title: "High-Voltage Power Supply",
-        description:
-          "Developed a 400V isolated power supply for high-power robotics applications.",
-        highlights: [
-          "Isolated DC-DC converter",
-          "Safety certification",
-          "EMC design",
-          "Real-time monitoring",
-        ],
+        title: "Project 2",
+        description: "Project 2 Description",
+        highlights: [],
         github: "https://github.com/arhaamhossain",
         images: [
           "https://via.placeholder.com/600x400?text=Power+Supply",
         ],
       },
       {
-        title: "Embedded Sensor Module",
-        description:
-          "Multi-sensor module with IMU, pressure, and temperature sensing for autonomous systems.",
-        highlights: [
-          "MPU-9250 IMU",
-          "I2C communication",
-          "Sensor fusion algorithms",
-          "Low power design",
-        ],
+        title: "Project 3",
+        description: "Project 3 Description",
+        highlights: [],
         github: "https://github.com/arhaamhossain",
         images: [
           "https://via.placeholder.com/600x400?text=Sensor+Module",
@@ -74,45 +55,27 @@ const categories: ProjectCategory[] = [
     title: "Robotics & Research",
     projects: [
       {
-        title: "Autonomous Line Follower Robot",
-        description:
-          "Fast-response autonomous platform using computer vision and PID controllers.",
-        highlights: [
-          "OpenCV vision processing",
-          "PID control tuning",
-          "High-speed motor response",
-          "Real-time sensor fusion",
-        ],
+        title: "Project 1",
+        description: "Project 1 Description",
+        highlights: [],
         github: "https://github.com/arhaamhossain",
         images: [
           "https://via.placeholder.com/600x400?text=Line+Follower",
         ],
       },
       {
-        title: "Underwater Robotics Platform",
-        description:
-          "6-DOF underwater manipulation system with dynamic pressure compensation.",
-        highlights: [
-          "Waterproof enclosures",
-          "Thruster control",
-          "Pressure compensation",
-          "Tether management",
-        ],
+        title: "Project 2",
+        description: "Project 2 Description",
+        highlights: [],
         github: "https://github.com/arhaamhossain",
         images: [
           "https://via.placeholder.com/600x400?text=Underwater+Robot",
         ],
       },
       {
-        title: "Autonomous Drone Platform",
-        description:
-          "Quadrotor with custom control algorithms and autonomous navigation.",
-        highlights: [
-          "Flight controller firmware",
-          "Sensor fusion (IMU + GPS)",
-          "Autonomous navigation",
-          "LiDAR integration",
-        ],
+        title: "Project 3",
+        description: "Project 3 Description",
+        highlights: [],
         github: "https://github.com/arhaamhossain",
         images: [
           "https://via.placeholder.com/600x400?text=Drone+Platform",
@@ -327,29 +290,29 @@ export default function Home() {
                 {category.description}
               </p>
             )}
-            <div className="space-y-12">
+            <div className="space-y-20">
               {category.projects.map((project) => (
                 <div
                   key={project.title}
-                  className="border border-gray-800 rounded-lg overflow-hidden bg-gray-950/50 backdrop-blur hover:border-blue-500/50 transition group fade-in-up"
+                  className="group fade-in-up"
                 >
-                  <div className="grid md:grid-cols-2 gap-0">
+                  <div className="grid md:grid-cols-2 gap-12 items-start">
                     {/* Project Content - Left Column */}
-                    <div className="p-8 flex flex-col justify-between order-2 md:order-1">
+                    <div className="order-2 md:order-1 space-y-6">
                       <div>
-                        <h3 className="text-2xl font-semibold mb-3 group-hover:text-white transition">
+                        <h3 className="text-3xl font-semibold mb-4 text-white">
                           {project.title}
                         </h3>
-                        <p className="text-gray-400 mb-6 text-base leading-relaxed">
+                        <p className="text-gray-400 mb-6 text-lg leading-relaxed">
                           {project.description}
                         </p>
 
-                        {project.highlights && (
+                        {project.highlights && project.highlights.length > 0 && (
                           <div className="flex flex-wrap gap-2 mb-6">
                             {project.highlights.map((highlight) => (
                               <span
                                 key={highlight}
-                                className="px-3 py-1 text-xs bg-white/10 text-gray-300 rounded-full"
+                                className="px-3 py-1 text-sm bg-white/10 text-gray-300 rounded-full"
                               >
                                 {highlight}
                               </span>
@@ -364,7 +327,7 @@ export default function Home() {
                             href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-white hover:text-gray-300 underline transition text-sm"
+                            className="text-white hover:text-gray-300 underline transition text-base"
                           >
                             GitHub →
                           </a>
@@ -374,7 +337,7 @@ export default function Home() {
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-white hover:text-gray-300 underline transition text-sm"
+                            className="text-white hover:text-gray-300 underline transition text-base"
                           >
                             Project →
                           </a>
@@ -384,7 +347,8 @@ export default function Home() {
 
                     {/* Project Image Carousel - Right Column */}
                     {project.images && project.images.length > 0 && (
-                      <div className="relative bg-gray-950 overflow-hidden aspect-video order-1 md:order-2">
+                      <div className="order-1 md:order-2 flex flex-col gap-6">
+                        <div className="relative bg-gray-950 overflow-hidden aspect-video rounded-lg shadow-lg">
                         <img
                           src={
                             project.images[
@@ -394,48 +358,6 @@ export default function Home() {
                           alt={project.title}
                           className="w-full h-full object-cover"
                         />
-
-                        {project.images.length > 1 && (
-                          <div className="absolute inset-0 flex items-center justify-between p-4 opacity-0 group-hover:opacity-100 transition">
-                            <button
-                              onClick={() => {
-                                const current = getActiveImageIndex(
-                                  category.title,
-                                  project.title
-                                );
-                                const newIndex =
-                                  (current - 1 + project.images!.length) %
-                                  project.images!.length;
-                                setActiveImageIndex(
-                                  category.title,
-                                  project.title,
-                                  newIndex
-                                );
-                              }}
-                              className="bg-black/50 hover:bg-black/80 text-white rounded-full p-2 transition"
-                            >
-                              ←
-                            </button>
-                            <button
-                              onClick={() => {
-                                const current = getActiveImageIndex(
-                                  category.title,
-                                  project.title
-                                );
-                                const newIndex =
-                                  (current + 1) % project.images!.length;
-                                setActiveImageIndex(
-                                  category.title,
-                                  project.title,
-                                  newIndex
-                                );
-                              }}
-                              className="bg-black/50 hover:bg-black/80 text-white rounded-full p-2 transition"
-                            >
-                              →
-                            </button>
-                          </div>
-                        )}
 
                         {/* Image indicators */}
                         {project.images.length > 1 && (
@@ -458,6 +380,53 @@ export default function Home() {
                                 }`}
                               />
                             ))}
+                          </div>
+                        )}
+                        </div>
+
+                        {/* Navigation Arrows - Below Image */}
+                        {project.images.length > 1 && (
+                          <div className="flex justify-center gap-6">
+                            <button
+                              onClick={() => {
+                                const current = getActiveImageIndex(
+                                  category.title,
+                                  project.title
+                                );
+                                const newIndex =
+                                  (current - 1 + project.images!.length) %
+                                  project.images!.length;
+                                setActiveImageIndex(
+                                  category.title,
+                                  project.title,
+                                  newIndex
+                                );
+                              }}
+                              className="bg-gray-800 hover:bg-blue-600 text-white rounded-full p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
+                            >
+                              ←
+                            </button>
+                            <span className="text-gray-400 flex items-center text-sm">
+                              {getActiveImageIndex(category.title, project.title) + 1} / {project.images.length}
+                            </span>
+                            <button
+                              onClick={() => {
+                                const current = getActiveImageIndex(
+                                  category.title,
+                                  project.title
+                                );
+                                const newIndex =
+                                  (current + 1) % project.images!.length;
+                                setActiveImageIndex(
+                                  category.title,
+                                  project.title,
+                                  newIndex
+                                );
+                              }}
+                              className="bg-gray-800 hover:bg-blue-600 text-white rounded-full p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
+                            >
+                              →
+                            </button>
                           </div>
                         )}
                       </div>
