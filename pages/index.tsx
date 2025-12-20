@@ -213,27 +213,27 @@ export default function Home() {
       </Head>
 
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 border-b border-gray-800 backdrop-blur-md bg-black/95">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="#" className="text-2xl font-bold text-white">
-            <img src="/ARX/arx.png" alt="ARX Logo" className="h-10" />
+      <nav className="fixed top-0 z-50 w-full border-b border-gray-800 backdrop-blur-md bg-black/95">
+        <div className="max-w-6xl mx-auto px-6 py-2 flex justify-between items-center">
+          <a href="#" className="text-xl font-bold text-white">
+            <img src="/ARX/arx.png" alt="ARX Logo" className="h-6" />
           </a>
-          <div className="hidden md:flex gap-8">
-            <a href="#about" className="hover:text-white transition">
-              About Me
+          <div className="hidden md:flex gap-6 text-sm">
+            <a href="#about" className="text-gray-400 hover:text-white transition">
+              About
             </a>
-            <a href="#portfolio" className="hover:text-white transition">
+            <a href="#portfolio" className="text-gray-400 hover:text-white transition">
               Projects
             </a>
-            <a href="#contact" className="hover:text-white transition">
-              Contact
+            <a href="https://github.com/arhaamhossain" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+              GitHub
             </a>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-6 py-24 md:py-32">
+      <section className="max-w-6xl mx-auto px-6 py-24 md:py-32 mt-16">
         <div className="mb-12">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 gradient-text fade-in-up">
             <span className="bg-gradient-to-r from-white to-white bg-clip-text text-transparent">Arhaam Hossain</span>
