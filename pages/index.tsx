@@ -327,138 +327,141 @@ export default function Home() {
                 {category.description}
               </p>
             )}
-
             <div className="space-y-12">
               {category.projects.map((project) => (
                 <div
                   key={project.title}
                   className="border border-gray-800 rounded-lg overflow-hidden bg-gray-950/50 backdrop-blur hover:border-blue-500/50 transition group fade-in-up"
                 >
-                  {/* Project Image Carousel */}
-                  {project.images && project.images.length > 0 && (
-                    <div className="relative bg-gray-950 overflow-hidden aspect-video max-h-80">
-                      <img
-                        src={
-                          project.images[
-                            getActiveImageIndex(category.title, project.title)
-                          ]
-                        }
-                        alt={project.title}
-                        className="w-full h-full object-cover"
-                      />
+                  <div className="grid md:grid-cols-2 gap-0">
+                    {/* Project Content - Left Column */}
+                    <div className="p-8 flex flex-col justify-between order-2 md:order-1">
+                      <div>
+                        <h3 className="text-2xl font-semibold mb-3 group-hover:text-white transition">
+                          {project.title}
+                        </h3>
+                        <p className="text-gray-400 mb-6 text-base leading-relaxed">
+                          {project.description}
+                        </p>
 
-                      {project.images.length > 1 && (
-                        <div className="absolute inset-0 flex items-center justify-between p-4 opacity-0 group-hover:opacity-100 transition">
-                          <button
-                            onClick={() => {
-                              const current = getActiveImageIndex(
-                                category.title,
-                                project.title
-                              );
-                              const newIndex =
-                                (current - 1 + project.images!.length) %
-                                project.images!.length;
-                              setActiveImageIndex(
-                                category.title,
-                                project.title,
-                                newIndex
-                              );
-                            }}
-                            className="bg-black/50 hover:bg-black/80 text-white rounded-full p-2 transition"
-                          >
-                            ←
-                          </button>
-                          <button
-                            onClick={() => {
-                              const current = getActiveImageIndex(
-                                category.title,
-                                project.title
-                              );
-                              const newIndex =
-                                (current + 1) % project.images!.length;
-                              setActiveImageIndex(
-                                category.title,
-                                project.title,
-                                newIndex
-                              );
-                            }}
-                            className="bg-black/50 hover:bg-black/80 text-white rounded-full p-2 transition"
-                          >
-                            →
-                          </button>
-                        </div>
-                      )}
+                        {project.highlights && (
+                          <div className="flex flex-wrap gap-2 mb-6">
+                            {project.highlights.map((highlight) => (
+                              <span
+                                key={highlight}
+                                className="px-3 py-1 text-xs bg-white/10 text-gray-300 rounded-full"
+                              >
+                                {highlight}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                      </div>
 
-                      {/* Image indicators */}
-                      {project.images.length > 1 && (
-                        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
-                          {project.images.map((_, idx) => (
+                      <div className="flex gap-4">
+                        {project.github && (
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white hover:text-gray-300 underline transition text-sm"
+                          >
+                            GitHub →
+                          </a>
+                        )}
+                        {project.link && (
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white hover:text-gray-300 underline transition text-sm"
+                          >
+                            Project →
+                          </a>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Project Image Carousel - Right Column */}
+                    {project.images && project.images.length > 0 && (
+                      <div className="relative bg-gray-950 overflow-hidden aspect-video order-1 md:order-2">
+                        <img
+                          src={
+                            project.images[
+                              getActiveImageIndex(category.title, project.title)
+                            ]
+                          }
+                          alt={project.title}
+                          className="w-full h-full object-cover"
+                        />
+
+                        {project.images.length > 1 && (
+                          <div className="absolute inset-0 flex items-center justify-between p-4 opacity-0 group-hover:opacity-100 transition">
                             <button
-                              key={idx}
-                              onClick={() =>
+                              onClick={() => {
+                                const current = getActiveImageIndex(
+                                  category.title,
+                                  project.title
+                                );
+                                const newIndex =
+                                  (current - 1 + project.images!.length) %
+                                  project.images!.length;
                                 setActiveImageIndex(
                                   category.title,
                                   project.title,
-                                  idx
-                                )
-                              }
-                              className={`w-2 h-2 rounded-full transition ${
-                                idx ===
-                                getActiveImageIndex(category.title, project.title)
-                                  ? "bg-blue-400"
-                                  : "bg-gray-600"
-                              }`}
-                            />
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  )}
+                                  newIndex
+                                );
+                              }}
+                              className="bg-black/50 hover:bg-black/80 text-white rounded-full p-2 transition"
+                            >
+                              ←
+                            </button>
+                            <button
+                              onClick={() => {
+                                const current = getActiveImageIndex(
+                                  category.title,
+                                  project.title
+                                );
+                                const newIndex =
+                                  (current + 1) % project.images!.length;
+                                setActiveImageIndex(
+                                  category.title,
+                                  project.title,
+                                  newIndex
+                                );
+                              }}
+                              className="bg-black/50 hover:bg-black/80 text-white rounded-full p-2 transition"
+                            >
+                              →
+                            </button>
+                          </div>
+                        )}
 
-                  {/* Project Content */}
-                  <div className="p-6">
-                    <h3 className="text-2xl font-semibold mb-3 group-hover:text-white transition">
-                      {project.title}
-                    </h3>
-                    <p className="text-gray-400 mb-6 text-lg">
-                      {project.description}
-                    </p>
-
-                    {project.highlights && (
-                      <div className="flex flex-wrap gap-2 mb-6">
-                        {project.highlights.map((highlight) => (
-                          <span
-                            key={highlight}
-                            className="px-3 py-1 text-sm bg-white/10 text-gray-300 rounded-full"
-                          >
-                            {highlight}
-                          </span>
-                        ))}
+                        {/* Image indicators */}
+                        {project.images.length > 1 && (
+                          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+                            {project.images.map((_, idx) => (
+                              <button
+                                key={idx}
+                                onClick={() =>
+                                  setActiveImageIndex(
+                                    category.title,
+                                    project.title,
+                                    idx
+                                  )
+                                }
+                                className={`w-2 h-2 rounded-full transition ${
+                                  idx ===
+                                  getActiveImageIndex(category.title, project.title)
+                                    ? "bg-blue-400"
+                                    : "bg-gray-600"
+                                }`}
+                              />
+                            ))}
+                          </div>
+                        )}
                       </div>
                     )}
-
-                    <div className="flex gap-4">
-                      {project.github && (
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-white hover:text-gray-300 underline transition"
-                        >
-                          GitHub →
-                        </a>
-                      )}
-                      {project.link && (
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-white hover:text-gray-300 underline transition"
-                        >
-                          Project →
-                        </a>
-                      )}
-                    </div>
                   </div>
                 </div>
               ))}
