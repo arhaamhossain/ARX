@@ -289,7 +289,7 @@ export default function Home() {
           </a>
           <div className="hidden md:flex gap-8">
             <a href="#about" className="hover:text-white transition">
-              About
+              About Me
             </a>
             <a href="#portfolio" className="hover:text-white transition">
               Projects
@@ -543,24 +543,17 @@ export default function Home() {
         className="bg-gray-950/50 py-20 border-t border-gray-800"
       >
         <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-8 text-white">About</h2>
+        <h2 className="text-4xl font-bold mb-8 text-white">About Me</h2>
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
             <p>
-              I&apos;m an Electrical Engineer passionate about building innovative
-              hardware and software systems. My work spans from PCB design and
-              microcontroller firmware to robotics platforms and web
-              applications.
+              I&apos;m an Electrical Engineering student passionate about building innovative analog and digital hardware systems. I&apos;ve been fortunate to develop an intuition for hardware across multiple abstraction levels, from system architecture down to transistor-level design. My work spans embedded systems, electronics, PCB development, and IC design.
             </p>
             <p>
-              I believe in open-source principles and transparent design. Most
-              of my projects emphasize practical engineering solutions with
-              attention to reliability, scalability, and maintainability.
+              Outside of coursework, I&apos;ve dedicated much of my time to robotics development. I previously served as Power Lead and Vice President of the Stony Brook Robotics Team, contributing to the design and deployment of an autonomous search-and-rescue robot and an underwater ROV for international competition. I&apos;m also a member of the Soft Flyers Group, where my current research focuses on developing a reactive collision-avoidance UAV.
             </p>
             <p>
-              When I&apos;m not engineering, I enjoy contributing to open-source
-              projects and staying updated with emerging technologies in
-              embedded systems and robotics.
+              I&apos;m driven by the goal of creating technology that is efficient, intelligent, and impactful, and by a commitment to continuous learning and improvement. I enjoy tackling complex engineering challenges and pushing my understanding of engineering further with every project and task.
             </p>
           </div>
           <div className="space-y-4">
