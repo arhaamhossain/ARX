@@ -359,14 +359,14 @@ export default function Home() {
           <h2 className="text-lg font-semibold text-gray-400 mb-6">
             Engineering with
           </h2>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2">
             {softwareTools.map((tool) => (
               <a
                 key={tool.name}
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-3 py-2 border border-gray-700 rounded hover:border-gray-500 hover:bg-gray-900/30 transition"
+                className="flex items-center gap-2 px-2 py-1 border border-gray-700 rounded hover:border-gray-500 hover:bg-gray-900/30 transition"
                 title={`Visit ${tool.name}`}
               >
                 <img 
@@ -374,7 +374,7 @@ export default function Home() {
                   alt={`${tool.name} logo`}
                   className="h-4 object-contain"
                 />
-                <span className="text-sm text-gray-400 hover:text-gray-300 transition">
+                <span className="text-xs text-gray-400 hover:text-gray-300 transition">
                   {tool.name}
                 </span>
               </a>
