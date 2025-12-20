@@ -126,17 +126,17 @@ const softwareTools = [
   {
     name: "KiCAD",
     url: "https://kicad.org/",
-    logoPath: "/ARX/kicadlogo.png"
+    logoPath: "/ARX/KiCad_logo_square.svg"
   },
   {
     name: "Altium Designer",
     url: "https://www.altium.com/",
-    logoPath: "/ARX/altiumlogo.png"
+    logoPath: "/ARX/Altium_Logo.svg"
   },
   {
     name: "Cadence Virtuoso",
     url: "https://www.cadence.com/",
-    logoPath: "/ARX/cadencelogo.png"
+    logoPath: "/ARX/Cadence-Logo.svg"
   },
   {
     name: "MATLAB",
