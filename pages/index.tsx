@@ -418,9 +418,6 @@ export default function Home() {
                             >
                               ←
                             </button>
-                            <span className="text-gray-400 flex items-center text-sm">
-                              {getActiveImageIndex(category.title, project.title) + 1} / {project.images.length}
-                            </span>
                             <button
                               onClick={() => {
                                 const current = getActiveImageIndex(
