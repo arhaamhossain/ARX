@@ -79,15 +79,15 @@
     @apply text-white overflow-x-hidden;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(
-      135deg,
-      #0a0e27 0%,
-      #0f1535 25%,
-      #1a0f3a 50%,
-      #0d1a3d 75%,
-      #0a0e27 100%
+      -45deg,
+      #000000,
+      #0a0a0a,
+      #1a1a1a,
+      #0f0f0f,
+      #000000
     );
     background-size: 400% 400%;
-    animation: gradientShift 20s ease infinite;
+    animation: gradientShift 15s ease infinite;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
