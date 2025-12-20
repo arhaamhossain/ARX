@@ -28,7 +28,9 @@ const categories: ProjectCategory[] = [
         highlights: [],
         github: "https://github.com/arhaamhossain",
         images: [
-          "https://via.placeholder.com/600x400?text=Motor+Controller+PCB",
+          "https://via.placeholder.com/600x400?text=Motor+Controller+PCB+1",
+          "https://via.placeholder.com/600x400?text=Motor+Controller+PCB+2",
+          "https://via.placeholder.com/600x400?text=Motor+Controller+PCB+3",
         ],
       },
       {
@@ -37,7 +39,9 @@ const categories: ProjectCategory[] = [
         highlights: [],
         github: "https://github.com/arhaamhossain",
         images: [
-          "https://via.placeholder.com/600x400?text=Power+Supply",
+          "https://via.placeholder.com/600x400?text=Power+Supply+1",
+          "https://via.placeholder.com/600x400?text=Power+Supply+2",
+          "https://via.placeholder.com/600x400?text=Power+Supply+3",
         ],
       },
       {
@@ -46,7 +50,9 @@ const categories: ProjectCategory[] = [
         highlights: [],
         github: "https://github.com/arhaamhossain",
         images: [
-          "https://via.placeholder.com/600x400?text=Sensor+Module",
+          "https://via.placeholder.com/600x400?text=Sensor+Module+1",
+          "https://via.placeholder.com/600x400?text=Sensor+Module+2",
+          "https://via.placeholder.com/600x400?text=Sensor+Module+3",
         ],
       },
     ],
@@ -60,7 +66,9 @@ const categories: ProjectCategory[] = [
         highlights: [],
         github: "https://github.com/arhaamhossain",
         images: [
-          "https://via.placeholder.com/600x400?text=Line+Follower",
+          "https://via.placeholder.com/600x400?text=Line+Follower+1",
+          "https://via.placeholder.com/600x400?text=Line+Follower+2",
+          "https://via.placeholder.com/600x400?text=Line+Follower+3",
         ],
       },
       {
@@ -69,7 +77,9 @@ const categories: ProjectCategory[] = [
         highlights: [],
         github: "https://github.com/arhaamhossain",
         images: [
-          "https://via.placeholder.com/600x400?text=Underwater+Robot",
+          "https://via.placeholder.com/600x400?text=Underwater+Robot+1",
+          "https://via.placeholder.com/600x400?text=Underwater+Robot+2",
+          "https://via.placeholder.com/600x400?text=Underwater+Robot+3",
         ],
       },
       {
@@ -78,7 +88,9 @@ const categories: ProjectCategory[] = [
         highlights: [],
         github: "https://github.com/arhaamhossain",
         images: [
-          "https://via.placeholder.com/600x400?text=Drone+Platform",
+          "https://via.placeholder.com/600x400?text=Drone+Platform+1",
+          "https://via.placeholder.com/600x400?text=Drone+Platform+2",
+          "https://via.placeholder.com/600x400?text=Drone+Platform+3",
         ],
       },
     ],
@@ -299,16 +311,17 @@ export default function Home() {
                   <div className="grid md:grid-cols-2 gap-12 items-start">
                     {/* Project Content - Left Column */}
                     <div className="order-2 md:order-1 space-y-6">
-                      <div>
+                      <div className="border border-gray-700 rounded-lg p-6 bg-gray-950/50 backdrop-blur">
                         <h3 className="text-3xl font-semibold mb-4 text-white">
                           {project.title}
                         </h3>
-                        <p className="text-gray-400 mb-6 text-lg leading-relaxed">
+                        <p className="text-gray-300 text-lg leading-relaxed">
                           {project.description}
                         </p>
+                      </div>
 
                         {project.highlights && project.highlights.length > 0 && (
-                          <div className="flex flex-wrap gap-2 mb-6">
+                          <div className="flex flex-wrap gap-2 mt-6">
                             {project.highlights.map((highlight) => (
                               <span
                                 key={highlight}
@@ -319,7 +332,6 @@ export default function Home() {
                             ))}
                           </div>
                         )}
-                      </div>
 
                       <div className="flex gap-4">
                         {project.github && (
