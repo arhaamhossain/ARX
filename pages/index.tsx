@@ -21,7 +21,6 @@ interface ProjectCategory {
 const categories: ProjectCategory[] = [
   {
     title: "Electrical Engineering",
-    description: "Hardware design, PCB layout, and power electronics",
     projects: [
       {
         title: "Custom PCB Motor Controller",
@@ -72,59 +71,7 @@ const categories: ProjectCategory[] = [
     ],
   },
   {
-    title: "Embedded Systems",
-    description: "Firmware development and hardware abstraction layers",
-    projects: [
-      {
-        title: "Real-Time Motor Control Firmware",
-        description:
-          "Developed RTOS-based firmware for synchronized multi-motor control with PID tuning.",
-        highlights: [
-          "FreeRTOS",
-          "PID control loops",
-          "PWM generation",
-          "Serial communication",
-        ],
-        github: "https://github.com/arhaamhossain",
-        images: [
-          "https://via.placeholder.com/600x400?text=Motor+Firmware",
-        ],
-      },
-      {
-        title: "BLE Wireless Module",
-        description:
-          "Created wireless communication layer for robot telemetry and real-time parameter tuning.",
-        highlights: [
-          "Nordic nRF52",
-          "Bluetooth Low Energy",
-          "Event-driven architecture",
-          "Battery optimization",
-        ],
-        github: "https://github.com/arhaamhossain",
-        images: [
-          "https://via.placeholder.com/600x400?text=BLE+Module",
-        ],
-      },
-      {
-        title: "FPGA-based Sensor Processor",
-        description:
-          "Designed parallel sensor data processing pipeline in Verilog for real-time vision.",
-        highlights: [
-          "Verilog HDL",
-          "FPGA synthesis",
-          "Parallel processing",
-          "Video pipeline",
-        ],
-        github: "https://github.com/arhaamhossain",
-        images: [
-          "https://via.placeholder.com/600x400?text=FPGA+Processor",
-        ],
-      },
-    ],
-  },
-  {
     title: "Robotics & Research",
-    description: "Complete autonomous systems and robotic platforms",
     projects: [
       {
         title: "Autonomous Line Follower Robot",
@@ -179,7 +126,7 @@ const softwareTools = [
   {
     name: "KiCAD",
     url: "https://kicad.org/",
-    logoPath: "/ARX/kicadlogo.jpeg"
+    logoPath: "/ARX/kicadlogo.png"
   },
   {
     name: "Altium Designer",
@@ -189,7 +136,7 @@ const softwareTools = [
   {
     name: "Cadence Virtuoso",
     url: "https://www.cadence.com/",
-    logoPath: "/ARX/cadencelogo.jpeg"
+    logoPath: "/ARX/cadencelogo.png"
   },
   {
     name: "MATLAB",
