@@ -176,100 +176,100 @@ export default function Home() {
             <feGaussianBlur in="SourceGraphic" stdDeviation="60" />
           </filter>
         </defs>
-        {/* Blob 1 - Top Left */}
+        {/* Blob 1 - Top Left - Deep Blue */}
         <circle
           cx="15%"
           cy="20%"
           r="200"
-          fill="#ffffff"
-          opacity="0.02"
+          fill="#3d5afe"
+          opacity="0.03"
           filter="url(#blur)"
           style={{
             animation: 'float1 20s ease-in-out infinite',
           }}
         />
-        {/* Blob 2 - Top Right */}
+        {/* Blob 2 - Top Right - Purple */}
         <circle
           cx="85%"
           cy="25%"
           r="250"
-          fill="#ffffff"
-          opacity="0.025"
+          fill="#7c3aed"
+          opacity="0.035"
           filter="url(#blur)"
           style={{
             animation: 'float2 25s ease-in-out infinite',
           }}
         />
-        {/* Blob 3 - Bottom Center */}
+        {/* Blob 3 - Bottom Center - Dark Blue */}
         <circle
           cx="50%"
           cy="80%"
           r="220"
-          fill="#ffffff"
-          opacity="0.02"
+          fill="#1e40af"
+          opacity="0.025"
           filter="url(#blur)"
           style={{
             animation: 'float3 22s ease-in-out infinite',
           }}
         />
-        {/* Blob 4 - Bottom Left */}
+        {/* Blob 4 - Bottom Left - Deep Purple */}
         <circle
           cx="10%"
           cy="70%"
           r="180"
-          fill="#ffffff"
-          opacity="0.015"
+          fill="#6d28d9"
+          opacity="0.02"
           filter="url(#blur)"
           style={{
             animation: 'float2 28s ease-in-out infinite',
           }}
         />
-        {/* Blob 5 - Center Right */}
+        {/* Blob 5 - Center Right - Bright Blue */}
         <circle
           cx="90%"
           cy="60%"
           r="240"
-          fill="#ffffff"
-          opacity="0.02"
+          fill="#2563eb"
+          opacity="0.025"
           filter="url(#blur)"
           style={{
             animation: 'float1 26s ease-in-out infinite',
           }}
         />
-        {/* Blob 6 - Middle Left */}
+        {/* Blob 6 - Middle Left - Purple Blue */}
         <circle
           cx="5%"
           cy="40%"
           r="210"
-          fill="#ffffff"
-          opacity="0.015"
+          fill="#5b21b6"
+          opacity="0.02"
           filter="url(#blur)"
           style={{
             animation: 'float3 24s ease-in-out infinite',
           }}
         />
-        {/* Blob 7 - Middle Right */}
+        {/* Blob 7 - Middle Right - Indigo */}
         <circle
           cx="95%"
           cy="35%"
           r="190"
-          fill="#ffffff"
-          opacity="0.015"
+          fill="#4f46e5"
+          opacity="0.025"
           filter="url(#blur)"
           style={{
             animation: 'float1 23s ease-in-out infinite',
           }}
         />
         
-        {/* Decorative stars */}
-        <circle cx="10%" cy="10%" r="1" fill="#ffffff" opacity="0.8" style={{ animation: 'twinkle 3s ease-in-out infinite' }} />
-        <circle cx="85%" cy="15%" r="0.8" fill="#ffffff" opacity="0.6" style={{ animation: 'twinkle 2.5s ease-in-out infinite 0.5s' }} />
-        <circle cx="20%" cy="50%" r="1.2" fill="#ffffff" opacity="0.7" style={{ animation: 'twinkle 3.5s ease-in-out infinite 1s' }} />
-        <circle cx="92%" cy="45%" r="0.9" fill="#ffffff" opacity="0.5" style={{ animation: 'twinkle 2.8s ease-in-out infinite 0.3s' }} />
-        <circle cx="15%" cy="80%" r="1" fill="#ffffff" opacity="0.6" style={{ animation: 'twinkle 3.2s ease-in-out infinite 0.7s' }} />
-        <circle cx="88%" cy="70%" r="0.7" fill="#ffffff" opacity="0.8" style={{ animation: 'twinkle 2.9s ease-in-out infinite 0.2s' }} />
-        <circle cx="50%" cy="20%" r="0.8" fill="#ffffff" opacity="0.5" style={{ animation: 'twinkle 3.3s ease-in-out infinite 0.9s' }} />
-        <circle cx="25%" cy="70%" r="1.1" fill="#ffffff" opacity="0.7" style={{ animation: 'twinkle 2.7s ease-in-out infinite 0.4s' }} />
+        {/* Decorative stars with cosmic glow */}
+        <circle cx="10%" cy="10%" r="1" fill="#60a5fa" opacity="0.8" style={{ animation: 'twinkle 3s ease-in-out infinite' }} />
+        <circle cx="85%" cy="15%" r="0.8" fill="#a78bfa" opacity="0.6" style={{ animation: 'twinkle 2.5s ease-in-out infinite 0.5s' }} />
+        <circle cx="20%" cy="50%" r="1.2" fill="#7dd3fc" opacity="0.7" style={{ animation: 'twinkle 3.5s ease-in-out infinite 1s' }} />
+        <circle cx="92%" cy="45%" r="0.9" fill="#c084fc" opacity="0.5" style={{ animation: 'twinkle 2.8s ease-in-out infinite 0.3s' }} />
+        <circle cx="15%" cy="80%" r="1" fill="#93c5fd" opacity="0.6" style={{ animation: 'twinkle 3.2s ease-in-out infinite 0.7s' }} />
+        <circle cx="88%" cy="70%" r="0.7" fill="#ddd6fe" opacity="0.8" style={{ animation: 'twinkle 2.9s ease-in-out infinite 0.2s' }} />
+        <circle cx="50%" cy="20%" r="0.8" fill="#bfdbfe" opacity="0.5" style={{ animation: 'twinkle 3.3s ease-in-out infinite 0.9s' }} />
+        <circle cx="25%" cy="70%" r="1.1" fill="#e9d5ff" opacity="0.7" style={{ animation: 'twinkle 2.7s ease-in-out infinite 0.4s' }} />
       </svg>
 
       <Head>
