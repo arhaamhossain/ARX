@@ -377,7 +377,7 @@ export default function Home() {
                 <img 
                   src={tool.logoPath} 
                   alt={`${tool.name} logo`}
-                  className="h-5 object-contain"
+                  className="h-4 object-contain"
                 />
                 <span className="text-sm text-gray-400 hover:text-gray-300 transition">
                   {tool.name}
