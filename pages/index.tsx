@@ -387,7 +387,7 @@ export default function Home() {
                                 className={`w-2 h-2 rounded-full transition ${
                                   idx ===
                                   getActiveImageIndex(category.title, project.title)
-                                    ? "bg-blue-400"
+                                    ? "bg-white"
                                     : "bg-gray-600"
                                 }`}
                               />
@@ -414,7 +414,7 @@ export default function Home() {
                                   newIndex
                                 );
                               }}
-                              className="bg-gray-800 hover:bg-blue-600 text-white rounded-full p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
+                              className="bg-gray-800 hover:bg-white hover:text-black text-white rounded-full p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
                             >
                               ←
                             </button>
@@ -432,7 +432,7 @@ export default function Home() {
                                   newIndex
                                 );
                               }}
-                              className="bg-gray-800 hover:bg-blue-600 text-white rounded-full p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
+                              className="bg-gray-800 hover:bg-white hover:text-black text-white rounded-full p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
                             >
                               →
                             </button>
@@ -507,7 +507,7 @@ export default function Home() {
             href="https://github.com/arhaamhossain"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 border border-white text-white rounded-lg hover:bg-blue-400/10 transition"
+            className="px-6 py-3 border border-white text-white rounded-lg hover:bg-white/10 transition"
           >
             GitHub
           </a>
@@ -515,7 +515,7 @@ export default function Home() {
             href="https://linkedin.com/in/arhaam-hossain"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 border border-white text-white rounded-lg hover:bg-blue-400/10 transition"
+            className="px-6 py-3 border border-white text-white rounded-lg hover:bg-white/10 transition"
           >
             LinkedIn
           </a>
