@@ -360,7 +360,7 @@ export default function Home() {
                     {/* Project Image Carousel - Right Column */}
                     {project.images && project.images.length > 0 && (
                       <div className="order-1 md:order-2 flex flex-col gap-6">
-                        <div className="relative bg-gray-950 overflow-hidden aspect-video rounded-lg shadow-lg">
+                        <div className="relative bg-gray-950 overflow-hidden aspect-square rounded-lg shadow-lg">
                         <img
                           src={
                             project.images[
