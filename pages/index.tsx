@@ -208,12 +208,12 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-6 py-24 md:py-32 mt-16">
-        <div className="mb-12">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 gradient-text fade-in-up">
+      <section className="max-w-6xl mx-auto px-6 py-32 md:py-48 mt-16">
+        <div className="mb-16">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 gradient-text fade-in-up">
             <span className="bg-gradient-to-r from-white to-white bg-clip-text text-transparent">Arhaam Hossain</span>
           </h1>
-          <div className="flex flex-wrap gap-3 text-lg md:text-2xl text-gray-300 mb-8 font-medium fade-in-up stagger-1">
+          <div className="flex flex-wrap gap-4 text-xl md:text-3xl text-gray-300 mb-10 font-medium fade-in-up stagger-1">
             <span>Electrical Engineering</span>
             <span>•</span>
             <span>Stony Brook University</span>
@@ -302,7 +302,7 @@ export default function Home() {
                 {category.description}
               </p>
             )}
-            <div className="space-y-20">
+            <div className="space-y-28">
               {category.projects.map((project) => (
                 <div
                   key={project.title}
