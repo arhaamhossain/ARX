@@ -465,7 +465,7 @@ export default function Home() {
               Outside of coursework, I&apos;ve dedicated much of my time to robotics development. I previously served as Power Lead and Vice President of the Stony Brook Robotics Team, contributing to the design and deployment of an autonomous search-and-rescue robot and an underwater ROV for international competition. I&apos;m also a member of the Soft Flyers Group, where my current research focuses on developing a reactive collision UAV.
             </p>
             <p>
-              I&apos;m driven by the goal of creating technology that is efficient, intelligent, and impactful, and by a commitment to continuous learning and improvement. I enjoy tackling complex challenges and pushing my understanding of engineering further with every project and task.
+              I&apos;m driven by the goal of creating technology that is efficient, intelligent, and impactful, and by a commitment to continuous learning. I enjoy tackling complex challenges and pushing my understanding of engineering further with every project and task.
             </p>
           </div>
           <div className="space-y-4">
