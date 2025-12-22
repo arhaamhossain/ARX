@@ -224,7 +224,7 @@ export default function Home() {
           {/* Links Section with Icons */}
           <div className="flex flex-wrap gap-6 items-center mt-8 fade-in-up stagger-2">
             <a
-              href="/ARX/resume.pdf"
+              href="/ARX/Arhaam_Hossain_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-white hover:text-gray-300 transition"
