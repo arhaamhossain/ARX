@@ -67,7 +67,7 @@ const categories: ProjectCategory[] = [
         github: "https://github.com/arhaamhossain",
         images: [
           "https://via.placeholder.com/600x400?text=Line+Follower+1",
-          "/ARX/schematic.pdf",
+          "/ARX/autonomous_robot_control_schematic.pdf",
           "https://via.placeholder.com/600x400?text=Line+Follower+3",
         ],
       },
