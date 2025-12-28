@@ -67,7 +67,7 @@ const categories: ProjectCategory[] = [
         github: "https://github.com/arhaamhossain",
         images: [
           "https://via.placeholder.com/600x400?text=Line+Follower+1",
-          "https://via.placeholder.com/600x400?text=Line+Follower+2",
+          "/ARX/schematic.pdf",
           "https://via.placeholder.com/600x400?text=Line+Follower+3",
         ],
       },
@@ -366,15 +366,23 @@ export default function Home() {
                     {project.images && project.images.length > 0 && (
                       <div className="order-1 md:order-2 flex flex-col gap-6 md:col-span-2">
                         <div className="relative bg-gray-950 overflow-hidden aspect-square rounded-lg shadow-lg">
-                        <img
-                          src={
-                            project.images[
-                              getActiveImageIndex(category.title, project.title)
-                            ]
-                          }
-                          alt={project.title}
-                          className="w-full h-full object-cover"
-                        />
+                        {project.images[getActiveImageIndex(category.title, project.title)].endsWith('.pdf') ? (
+                          <embed
+                            src={project.images[getActiveImageIndex(category.title, project.title)]}
+                            type="application/pdf"
+                            className="w-full h-full"
+                          />
+                        ) : (
+                          <img
+                            src={
+                              project.images[
+                                getActiveImageIndex(category.title, project.title)
+                              ]
+                            }
+                            alt={project.title}
+                            className="w-full h-full object-cover"
+                          />
+                        )}
 
                         {/* Image indicators */}
                         {project.images.length > 1 && (
