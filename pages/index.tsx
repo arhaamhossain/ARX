@@ -58,7 +58,7 @@ const categories: ProjectCategory[] = [
     ],
   },
   {
-    title: "Robotics & Research",
+    title: "Robotics",
     projects: [
       {
         title: "Project 1",
@@ -91,6 +91,44 @@ const categories: ProjectCategory[] = [
           "https://via.placeholder.com/600x400?text=Drone+Platform+1",
           "https://via.placeholder.com/600x400?text=Drone+Platform+2",
           "https://via.placeholder.com/600x400?text=Drone+Platform+3",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Research",
+    projects: [
+      {
+        title: "Project 1",
+        description: "Project 1 Description",
+        highlights: [],
+        github: "https://github.com/arhaamhossain",
+        images: [
+          "https://via.placeholder.com/600x400?text=Research+1+1",
+          "https://via.placeholder.com/600x400?text=Research+1+2",
+          "https://via.placeholder.com/600x400?text=Research+1+3",
+        ],
+      },
+      {
+        title: "Project 2",
+        description: "Project 2 Description",
+        highlights: [],
+        github: "https://github.com/arhaamhossain",
+        images: [
+          "https://via.placeholder.com/600x400?text=Research+2+1",
+          "https://via.placeholder.com/600x400?text=Research+2+2",
+          "https://via.placeholder.com/600x400?text=Research+2+3",
+        ],
+      },
+      {
+        title: "Project 3",
+        description: "Project 3 Description",
+        highlights: [],
+        github: "https://github.com/arhaamhossain",
+        images: [
+          "https://via.placeholder.com/600x400?text=Research+3+1",
+          "https://via.placeholder.com/600x400?text=Research+3+2",
+          "https://via.placeholder.com/600x400?text=Research+3+3",
         ],
       },
     ],
