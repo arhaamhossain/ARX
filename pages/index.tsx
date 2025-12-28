@@ -61,7 +61,7 @@ const categories: ProjectCategory[] = [
     title: "Robotics",
     projects: [
       {
-        title: "Autonomous Robot Control System",
+        title: "Cyclone V1 Autonomous Robot Control System",
         description: "Project 1 Description",
         highlights: [],
         github: "https://github.com/arhaamhossain",
