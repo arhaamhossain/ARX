@@ -299,7 +299,7 @@ export default function Home() {
         {categories.map((category) => (
           <div key={category.title} className={`mb-24 py-20 px-6`}>
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold mb-4 text-white">
+              <h2 className="text-4xl font-bold mb-4 text-white italic">
                 {category.title}
               </h2>
               {category.description && (
@@ -317,7 +317,7 @@ export default function Home() {
                     {/* Project Content - Left Column */}
                     <div className="order-2 md:order-1 space-y-6 md:col-span-1">
                       <div className="border border-gray-700 rounded-lg p-6 bg-gray-950/50 backdrop-blur">
-                        <h3 className="text-3xl font-semibold mb-4 text-white">
+                        <h3 className="text-2xl font-semibold mb-4 text-white">
                           {project.title}
                         </h3>
                         <p className="text-gray-300 text-lg leading-relaxed">
