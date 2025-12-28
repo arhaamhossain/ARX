@@ -464,7 +464,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
             <p>
-              I&apos;m an Electrical Engineering student passionate about building innovative analog and digital hardware systems. I&apos;ve been fortunate to develop an intuition for hardware across multiple abstraction levels, from system architecture down to transistor-level design. My work spans embedded systems, electronics, PCB development, and IC design.
+              I&apos;m an Electrical Engineering student passionate about building innovative analog and digital hardware systems. I&apos;ve been fortunate to develop an intuition for hardware across multiple abstraction levels, from system architecture down to transistor-level design. My work spans across embedded systems, electronics, PCB development, and IC design.
             </p>
             <p>
               Outside of coursework, I&apos;ve dedicated much of my time to robotics development. I previously served as Power Lead and Vice President of the Stony Brook Robotics Team, contributing to the development of an autonomous search-and-rescue robot and an underwater ROV for international competition. I&apos;m also a member of the Soft Flyers Group, where my current research focuses on developing a reactive collision UAV.
