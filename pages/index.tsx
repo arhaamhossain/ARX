@@ -23,7 +23,7 @@ const categories: ProjectCategory[] = [
     title: "Electrical Engineering",
     projects: [
       {
-        title: "Project 1",
+        title: "Low Power IC for Neuromorphic Computing",
         description: "Project 1 Description",
         highlights: [],
         github: "https://github.com/arhaamhossain",
@@ -34,7 +34,7 @@ const categories: ProjectCategory[] = [
         ],
       },
       {
-        title: "Project 2",
+        title: "8-bit Pipelined Carry Select Adder",
         description: "Project 2 Description",
         highlights: [],
         github: "https://github.com/arhaamhossain",
@@ -61,7 +61,7 @@ const categories: ProjectCategory[] = [
     title: "Robotics",
     projects: [
       {
-        title: "Project 1",
+        title: "Autonomous Robot Control System",
         description: "Project 1 Description",
         highlights: [],
         github: "https://github.com/arhaamhossain",
@@ -72,7 +72,7 @@ const categories: ProjectCategory[] = [
         ],
       },
       {
-        title: "Project 2",
+        title: "Underwater Robotics Platform",
         description: "Project 2 Description",
         highlights: [],
         github: "https://github.com/arhaamhossain",
@@ -88,7 +88,7 @@ const categories: ProjectCategory[] = [
     title: "Research",
     projects: [
       {
-        title: "Project 1",
+        title: "FPGA-Accelerated Reactive Collision UAV",
         description: "Project 1 Description",
         highlights: [],
         github: "https://github.com/arhaamhossain",
