@@ -510,11 +510,7 @@ export default function Home() {
         className="py-20 border-t border-gray-800"
       >
         <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-8 text-white">Get in Touch</h2>
-        <p className="text-gray-400 text-lg mb-8 max-w-2xl">
-          I&apos;m always interested in discussing new projects, engineering challenges,
-          and opportunities to collaborate.
-        </p>
+        <h2 className="text-4xl font-bold mb-8 text-white">Contact</h2>
         <div className="flex flex-wrap gap-6">
           <a
             href="https://github.com/arhaamhossain"
