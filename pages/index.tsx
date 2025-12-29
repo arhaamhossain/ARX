@@ -72,7 +72,7 @@ const categories: ProjectCategory[] = [
         ],
       },
       {
-        title: "Underwater Robotics Platform",
+        title: "Stony Brook Robotics Team",
         description: "Project 2 Description",
         highlights: [],
         github: "https://github.com/arhaamhossain",
