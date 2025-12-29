@@ -487,7 +487,7 @@ export default function Home() {
               <div className="space-y-3 text-gray-400">
                 <div className="flex justify-between">
                   <span>Hobbies</span>
-                  <span className="text-white font-semibold">Gymming and Gaming</span>
+                  <span className="text-white font-semibold">Going to the gym and gaming</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Favorite Restaurant</span>
