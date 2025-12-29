@@ -365,7 +365,7 @@ export default function Home() {
                     {/* Project Image Carousel - Right Column */}
                     {project.images && project.images.length > 0 && (
                       <div className="order-1 md:order-2 flex flex-col gap-6 md:col-span-2">
-                        <div className="relative bg-gray-950 overflow-hidden aspect-square rounded-lg shadow-lg">
+                        <div className="relative bg-white overflow-hidden aspect-square rounded-lg shadow-lg flex items-center justify-center">
                         {project.images[getActiveImageIndex(category.title, project.title)].endsWith('.pdf') ? (
                           <embed
                             src={project.images[getActiveImageIndex(category.title, project.title)]}
@@ -380,7 +380,7 @@ export default function Home() {
                               ]
                             }
                             alt={project.title}
-                            className="w-full h-full object-cover"
+                            className="max-w-full max-h-full object-contain"
                           />
                         )}
 
