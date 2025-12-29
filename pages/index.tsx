@@ -69,7 +69,6 @@ const categories: ProjectCategory[] = [
           "/ARX/Robot Control.png",
           "/ARX/Robot Control back.png",
           "/ARX/autonomous_robot_control_schematic.pdf",
-          "https://via.placeholder.com/600x400?text=Line+Follower+3",
         ],
       },
       {
