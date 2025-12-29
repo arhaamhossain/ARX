@@ -316,7 +316,7 @@ export default function Home() {
                   <div className="grid md:grid-cols-3 gap-12 items-start">
                     {/* Project Content - Left Column */}
                     <div className="order-2 md:order-1 space-y-6 md:col-span-1">
-                      <div className="border border-gray-700 rounded-lg p-6 bg-gray-950/50 backdrop-blur">
+                      <div className="border border-gray-700 rounded-lg p-6 bg-gray-950">
                         <h3 className="text-2xl font-semibold mb-4 text-white">
                           {project.title}
                         </h3>
