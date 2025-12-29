@@ -317,7 +317,7 @@ export default function Home() {
                     {/* Project Content - Left Column */}
                     <div className="order-2 md:order-1 space-y-6 md:col-span-1">
                       <div className="border border-gray-700 rounded-lg p-6 bg-gray-950">
-                        <h3 className="text-2xl font-semibold mb-4 text-white">
+                        <h3 className="text-xl font-semibold mb-4 text-white">
                           {project.title}
                         </h3>
                         <p className="text-gray-300 text-lg leading-relaxed">
