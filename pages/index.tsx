@@ -99,7 +99,7 @@ const categories: ProjectCategory[] = [
             images: [
               "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+1",
               "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+2",
-              "/ARX/IC Rule Book 2024.pdf",
+              "/ARX/IC Rule Book 2024 v2.pdf",
             ],
           },
           {
