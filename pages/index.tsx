@@ -85,7 +85,7 @@ const categories: ProjectCategory[] = [
         github: "https://github.com/arhaamhossain",
         subProjects: [
           {
-            title: "MATE ROV Electrical Team",
+            title: "MATE ROV",
             description: "Sub-Project 1 Description",
             images: [
               "https://via.placeholder.com/600x400?text=Stony+Brook+1+Image+1",
@@ -94,7 +94,7 @@ const categories: ProjectCategory[] = [
             ],
           },
           {
-            title: "Internal Competition 2024 Vice President",
+            title: "Internal Competition 2024",
             description: "Sub-Project 2 Description",
             images: [
               "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+1",
@@ -103,7 +103,7 @@ const categories: ProjectCategory[] = [
             ],
           },
           {
-            title: "RCR Search & Rescue Bot Power Lead",
+            title: "RCR Search & Rescue Bot",
             description: "Sub-Project 3 Description",
             images: [
               "https://via.placeholder.com/600x400?text=Stony+Brook+3+Image+1",
