@@ -107,7 +107,7 @@ const categories: ProjectCategory[] = [
             description: "Sub-Project 3 Description",
             images: [
               "https://via.placeholder.com/600x400?text=Stony+Brook+3+Image+1",
-              "https://via.placeholder.com/600x400?text=Stony+Brook+3+Image+2",
+              "/ARX/Dexter Power.png",
               "https://via.placeholder.com/600x400?text=Stony+Brook+3+Image+3",
             ],
           },
