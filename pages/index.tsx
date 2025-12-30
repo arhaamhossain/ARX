@@ -437,6 +437,7 @@ export default function Home() {
                               />
                             ) : (
                               <img
+                                key={`${category.title}-${project.title}-${selectedIndex}-${getActiveImageIndex(category.title, project.title, selectedIndex)}`}
                                 src={
                                   selectedSubProj.images[
                                     getActiveImageIndex(
@@ -447,7 +448,8 @@ export default function Home() {
                                   ]
                                 }
                                 alt={selectedSubProj.title}
-                                className="max-w-full max-h-full object-contain transition-opacity duration-500 ease-in-out"
+                                className="max-w-full max-h-full object-contain animate-carouselFadeIn"
+                                style={{ animation: 'carouselFadeIn 0.5s ease-in-out' }}
                               />
                             )}
 
@@ -603,13 +605,15 @@ export default function Home() {
                           />
                         ) : (
                           <img
+                            key={`${category.title}-${project.title}-${getActiveImageIndex(category.title, project.title)}`}
                             src={
                               project.images[
                                 getActiveImageIndex(category.title, project.title)
                               ]
                             }
                             alt={project.title}
-                            className="max-w-full max-h-full object-contain transition-opacity duration-500 ease-in-out"
+                            className="max-w-full max-h-full object-contain animate-carouselFadeIn"
+                            style={{ animation: 'carouselFadeIn 0.5s ease-in-out' }}
                           />
                         )}
 
