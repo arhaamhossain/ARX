@@ -360,57 +360,60 @@ export default function Home() {
                 if (project.subProjects && project.subProjects.length > 0) {
                   const selectedIndex = getSelectedSubProject(project.title);
                   const selectedSubProj = project.subProjects[selectedIndex];
-                  const isExpanded = selectedSubProject[project.title] !== undefined;
 
                   return (
-                    <div key={project.title} className="group fade-in-up">
-                      {/* Main Project Title */}
-                      <div className="mb-8">
-                        <div className="border border-gray-700 rounded-lg p-6 bg-gray-950">
-                          <h3 className="text-xl font-semibold mb-4 text-white">
-                            {project.title}
-                          </h3>
-                          <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                            {project.description}
-                          </p>
-                          {project.github && (
-                            <a
-                              href={project.github}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-white hover:text-gray-300 underline transition text-base"
-                            >
-                              GitHub →
-                            </a>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* Sub-Projects Grid */}
-                      <div className="grid md:grid-cols-3 gap-6">
-                        {project.subProjects.map((subProj, idx) => (
-                          <button
-                            key={idx}
-                            onClick={() => setSelectedSubProjectIndex(project.title, idx)}
-                            className={`text-left border rounded-lg p-6 transition cursor-pointer ${
-                              idx === selectedIndex
-                                ? "border-white bg-gray-900 shadow-lg shadow-white/20"
-                                : "border-gray-700 bg-gray-950 hover:border-gray-600"
-                            }`}
-                          >
-                            <h4 className="text-lg font-semibold text-white mb-2">
-                              {subProj.title}
-                            </h4>
-                            <p className="text-gray-300 text-sm leading-relaxed">
-                              {subProj.description}
+                    <div
+                      key={project.title}
+                      className="group fade-in-up"
+                    >
+                      <div className="grid md:grid-cols-3 gap-12 items-start">
+                        {/* Project Content - Left Column */}
+                        <div className="order-2 md:order-1 space-y-6 md:col-span-1">
+                          <div className="border border-gray-700 rounded-lg p-6 bg-gray-950">
+                            <h3 className="text-xl font-semibold mb-4 text-white">
+                              {project.title}
+                            </h3>
+                            <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                              {project.description}
                             </p>
-                          </button>
-                        ))}
-                      </div>
+                            
+                            {/* Sub-Projects Stacked Vertically */}
+                            <div className="space-y-3">
+                              {project.subProjects.map((subProj, idx) => (
+                                <button
+                                  key={idx}
+                                  onClick={() => setSelectedSubProjectIndex(project.title, idx)}
+                                  className={`w-full text-left border rounded-lg p-4 transition cursor-pointer ${
+                                    idx === selectedIndex
+                                      ? "border-white bg-gray-900 shadow-lg shadow-white/10"
+                                      : "border-gray-700 bg-gray-900/50 hover:border-gray-600"
+                                  }`}
+                                >
+                                  <h4 className="font-semibold text-white mb-1 text-sm">
+                                    {subProj.title}
+                                  </h4>
+                                  <p className="text-gray-300 text-xs leading-relaxed">
+                                    {subProj.description}
+                                  </p>
+                                </button>
+                              ))}
+                            </div>
 
-                      {/* Carousel for Selected Sub-Project */}
-                      {isExpanded && (
-                        <div className="mt-12">
+                            {project.github && (
+                              <a
+                                href={project.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-white hover:text-gray-300 underline transition text-base inline-block mt-6"
+                              >
+                                GitHub →
+                              </a>
+                            )}
+                          </div>
+                        </div>
+
+                        {/* Project Image Carousel - Right Column */}
+                        <div className="order-1 md:order-2 flex flex-col gap-6 md:col-span-2">
                           <div className="relative bg-white overflow-hidden aspect-square rounded-lg shadow-lg flex items-center justify-center">
                             {selectedSubProj.images[
                               getActiveImageIndex(category.title, project.title, selectedIndex)
@@ -476,7 +479,7 @@ export default function Home() {
 
                           {/* Navigation Arrows */}
                           {selectedSubProj.images.length > 1 && (
-                            <div className="flex justify-center gap-6 mt-6">
+                            <div className="flex justify-center gap-6">
                               <button
                                 onClick={() => {
                                   const current = getActiveImageIndex(
@@ -524,7 +527,7 @@ export default function Home() {
                             </div>
                           )}
                         </div>
-                      )}
+                      </div>
                     </div>
                   );
                 }
