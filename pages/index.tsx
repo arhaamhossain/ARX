@@ -416,7 +416,7 @@ export default function Home() {
                         <div className="order-1 md:order-2 flex flex-col gap-6 md:col-span-2">
                           <div className={`relative overflow-hidden aspect-square rounded-lg shadow-lg flex items-center justify-center ${
                             project.title === "Stony Brook Robotics Team" && selectedSubProj.title === "MATE ROV" && getActiveImageIndex(category.title, project.title, selectedIndex) === 0
-                              ? "bg-slate-800"
+                              ? "bg-gray-500"
                               : "bg-white"
                           }`}>
                             {selectedSubProj.images[
