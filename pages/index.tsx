@@ -88,7 +88,7 @@ const categories: ProjectCategory[] = [
             title: "MATE ROV",
             description: "Sub-Project 1 Description",
             images: [
-              "https://via.placeholder.com/600x400?text=Stony+Brook+1+Image+1",
+              "/ARX/MROV_CAD_RENDER_1.png",
               "https://via.placeholder.com/600x400?text=Stony+Brook+1+Image+2",
               "https://via.placeholder.com/600x400?text=Stony+Brook+1+Image+3",
             ],
