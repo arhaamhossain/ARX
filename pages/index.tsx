@@ -108,7 +108,7 @@ const categories: ProjectCategory[] = [
             images: [
               "https://via.placeholder.com/600x400?text=Stony+Brook+3+Image+1",
               "/ARX/Dexter Power.png",
-              "https://via.placeholder.com/600x400?text=Stony+Brook+3+Image+3",
+              "/ARX/bms_circuit.svg",
             ],
           },
         ],
