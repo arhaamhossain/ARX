@@ -3,6 +3,12 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
 
+interface SubProject {
+  title: string;
+  description: string;
+  images: string[];
+}
+
 interface Project {
   title: string;
   description: string;
@@ -10,6 +16,7 @@ interface Project {
   link?: string;
   github?: string;
   images?: string[];
+  subProjects?: SubProject[];
 }
 
 interface ProjectCategory {
@@ -76,10 +83,34 @@ const categories: ProjectCategory[] = [
         description: "Project 2 Description",
         highlights: [],
         github: "https://github.com/arhaamhossain",
-        images: [
-          "https://via.placeholder.com/600x400?text=Underwater+Robot+1",
-          "https://via.placeholder.com/600x400?text=Underwater+Robot+2",
-          "https://via.placeholder.com/600x400?text=Underwater+Robot+3",
+        subProjects: [
+          {
+            title: "Sub-Project 1",
+            description: "Sub-Project 1 Description",
+            images: [
+              "https://via.placeholder.com/600x400?text=Stony+Brook+1+Image+1",
+              "https://via.placeholder.com/600x400?text=Stony+Brook+1+Image+2",
+              "https://via.placeholder.com/600x400?text=Stony+Brook+1+Image+3",
+            ],
+          },
+          {
+            title: "Sub-Project 2",
+            description: "Sub-Project 2 Description",
+            images: [
+              "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+1",
+              "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+2",
+              "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+3",
+            ],
+          },
+          {
+            title: "Sub-Project 3",
+            description: "Sub-Project 3 Description",
+            images: [
+              "https://via.placeholder.com/600x400?text=Stony+Brook+3+Image+1",
+              "https://via.placeholder.com/600x400?text=Stony+Brook+3+Image+2",
+              "https://via.placeholder.com/600x400?text=Stony+Brook+3+Image+3",
+            ],
+          },
         ],
       },
     ],
@@ -127,24 +158,40 @@ const softwareTools = [
 
 export default function Home() {
   const [activeImage, setActiveImage] = useState<{ [key: string]: number }>({});
+  const [selectedSubProject, setSelectedSubProject] = useState<{ [key: string]: number }>({});
 
   // Reset scroll position to top on page load
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const getActiveImageIndex = (categoryTitle: string, projectTitle: string) => {
-    const key = `${categoryTitle}-${projectTitle}`;
+  const getActiveImageIndex = (categoryTitle: string, projectTitle: string, subProjectIndex?: number) => {
+    let key = `${categoryTitle}-${projectTitle}`;
+    if (subProjectIndex !== undefined) {
+      key = `${categoryTitle}-${projectTitle}-${subProjectIndex}`;
+    }
     return activeImage[key] || 0;
   };
 
   const setActiveImageIndex = (
     categoryTitle: string,
     projectTitle: string,
-    index: number
+    index: number,
+    subProjectIndex?: number
   ) => {
-    const key = `${categoryTitle}-${projectTitle}`;
+    let key = `${categoryTitle}-${projectTitle}`;
+    if (subProjectIndex !== undefined) {
+      key = `${categoryTitle}-${projectTitle}-${subProjectIndex}`;
+    }
     setActiveImage({ ...activeImage, [key]: index });
+  };
+
+  const getSelectedSubProject = (projectTitle: string) => {
+    return selectedSubProject[projectTitle] || 0;
+  };
+
+  const setSelectedSubProjectIndex = (projectTitle: string, index: number) => {
+    setSelectedSubProject({ ...selectedSubProject, [projectTitle]: index });
   };
 
   return (
@@ -308,7 +355,182 @@ export default function Home() {
               </p>
             )}
             <div className="space-y-28">
-              {category.projects.map((project) => (
+              {category.projects.map((project) => {
+                // Handle sub-projects for Stony Brook Robotics Team
+                if (project.subProjects && project.subProjects.length > 0) {
+                  const selectedIndex = getSelectedSubProject(project.title);
+                  const selectedSubProj = project.subProjects[selectedIndex];
+                  const isExpanded = selectedSubProject[project.title] !== undefined;
+
+                  return (
+                    <div key={project.title} className="group fade-in-up">
+                      {/* Main Project Title */}
+                      <div className="mb-8">
+                        <div className="border border-gray-700 rounded-lg p-6 bg-gray-950">
+                          <h3 className="text-xl font-semibold mb-4 text-white">
+                            {project.title}
+                          </h3>
+                          <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                            {project.description}
+                          </p>
+                          {project.github && (
+                            <a
+                              href={project.github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-white hover:text-gray-300 underline transition text-base"
+                            >
+                              GitHub →
+                            </a>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Sub-Projects Grid */}
+                      <div className="grid md:grid-cols-3 gap-6">
+                        {project.subProjects.map((subProj, idx) => (
+                          <button
+                            key={idx}
+                            onClick={() => setSelectedSubProjectIndex(project.title, idx)}
+                            className={`text-left border rounded-lg p-6 transition cursor-pointer ${
+                              idx === selectedIndex
+                                ? "border-white bg-gray-900 shadow-lg shadow-white/20"
+                                : "border-gray-700 bg-gray-950 hover:border-gray-600"
+                            }`}
+                          >
+                            <h4 className="text-lg font-semibold text-white mb-2">
+                              {subProj.title}
+                            </h4>
+                            <p className="text-gray-300 text-sm leading-relaxed">
+                              {subProj.description}
+                            </p>
+                          </button>
+                        ))}
+                      </div>
+
+                      {/* Carousel for Selected Sub-Project */}
+                      {isExpanded && (
+                        <div className="mt-12">
+                          <div className="relative bg-white overflow-hidden aspect-square rounded-lg shadow-lg flex items-center justify-center">
+                            {selectedSubProj.images[
+                              getActiveImageIndex(category.title, project.title, selectedIndex)
+                            ].endsWith(".pdf") ? (
+                              <embed
+                                src={
+                                  selectedSubProj.images[
+                                    getActiveImageIndex(
+                                      category.title,
+                                      project.title,
+                                      selectedIndex
+                                    )
+                                  ]
+                                }
+                                type="application/pdf"
+                                className="w-full h-full"
+                              />
+                            ) : (
+                              <img
+                                src={
+                                  selectedSubProj.images[
+                                    getActiveImageIndex(
+                                      category.title,
+                                      project.title,
+                                      selectedIndex
+                                    )
+                                  ]
+                                }
+                                alt={selectedSubProj.title}
+                                className="max-w-full max-h-full object-contain"
+                              />
+                            )}
+
+                            {/* Image indicators */}
+                            {selectedSubProj.images.length > 1 && (
+                              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+                                {selectedSubProj.images.map((_, imgIdx) => (
+                                  <button
+                                    key={imgIdx}
+                                    onClick={() =>
+                                      setActiveImageIndex(
+                                        category.title,
+                                        project.title,
+                                        imgIdx,
+                                        selectedIndex
+                                      )
+                                    }
+                                    className={`w-2 h-2 rounded-full transition ${
+                                      imgIdx ===
+                                      getActiveImageIndex(
+                                        category.title,
+                                        project.title,
+                                        selectedIndex
+                                      )
+                                        ? "bg-white"
+                                        : "bg-gray-600"
+                                    }`}
+                                  />
+                                ))}
+                              </div>
+                            )}
+                          </div>
+
+                          {/* Navigation Arrows */}
+                          {selectedSubProj.images.length > 1 && (
+                            <div className="flex justify-center gap-6 mt-6">
+                              <button
+                                onClick={() => {
+                                  const current = getActiveImageIndex(
+                                    category.title,
+                                    project.title,
+                                    selectedIndex
+                                  );
+                                  const newIndex =
+                                    (current -
+                                      1 +
+                                      selectedSubProj.images.length) %
+                                    selectedSubProj.images.length;
+                                  setActiveImageIndex(
+                                    category.title,
+                                    project.title,
+                                    newIndex,
+                                    selectedIndex
+                                  );
+                                }}
+                                className="bg-gray-800 hover:bg-white hover:text-black text-white rounded-full p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
+                              >
+                                ←
+                              </button>
+                              <button
+                                onClick={() => {
+                                  const current = getActiveImageIndex(
+                                    category.title,
+                                    project.title,
+                                    selectedIndex
+                                  );
+                                  const newIndex =
+                                    (current + 1) %
+                                    selectedSubProj.images.length;
+                                  setActiveImageIndex(
+                                    category.title,
+                                    project.title,
+                                    newIndex,
+                                    selectedIndex
+                                  );
+                                }}
+                                className="bg-gray-800 hover:bg-white hover:text-black text-white rounded-full p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
+                              >
+                                →
+                              </button>
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+
+                // Regular project rendering for non-sub-projects
+                return (
                 <div
                   key={project.title}
                   className="group fade-in-up"
@@ -455,7 +677,8 @@ export default function Home() {
                     )}
                   </div>
                 </div>
-              ))}
+                );
+              })}
             </div>
             </div>
           </div>
