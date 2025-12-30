@@ -447,7 +447,7 @@ export default function Home() {
                                   ]
                                 }
                                 alt={selectedSubProj.title}
-                                className="max-w-full max-h-full object-contain"
+                                className="max-w-full max-h-full object-contain transition-opacity duration-500 ease-in-out"
                               />
                             )}
 
@@ -609,7 +609,7 @@ export default function Home() {
                               ]
                             }
                             alt={project.title}
-                            className="max-w-full max-h-full object-contain"
+                            className="max-w-full max-h-full object-contain transition-opacity duration-500 ease-in-out"
                           />
                         )}
 
