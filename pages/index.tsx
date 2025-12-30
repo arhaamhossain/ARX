@@ -82,7 +82,7 @@ const categories: ProjectCategory[] = [
         title: "Stony Brook Robotics Team",
         description: "Project 2 Description",
         highlights: [],
-        github: "https://github.com/arhaamhossain",
+        github: "https://github.com/sbroboticsteam",
         subProjects: [
           {
             title: "MATE ROV",
