@@ -414,7 +414,11 @@ export default function Home() {
 
                         {/* Project Image Carousel - Right Column */}
                         <div className="order-1 md:order-2 flex flex-col gap-6 md:col-span-2">
-                          <div className="relative bg-white overflow-hidden aspect-square rounded-lg shadow-lg flex items-center justify-center">
+                          <div className={`relative overflow-hidden aspect-square rounded-lg shadow-lg flex items-center justify-center ${
+                            project.title === "Stony Brook Robotics Team" && selectedSubProj.title === "MATE ROV"
+                              ? "bg-gray-900"
+                              : "bg-white"
+                          }`}>
                             {selectedSubProj.images[
                               getActiveImageIndex(category.title, project.title, selectedIndex)
                             ].endsWith(".pdf") ? (
