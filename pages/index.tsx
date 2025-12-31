@@ -93,9 +93,9 @@ const categories: ProjectCategory[] = [
             title: "Internal Competition 2024",
             description: "Sub-Project 2 Description",
             images: [
-              "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+1",
-              "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+2",
               "/ARX/IC Rule Book 2024 v2.pdf",
+              "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+2",
+              "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+3",
             ],
           },
           {
