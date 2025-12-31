@@ -569,7 +569,7 @@ export default function Home() {
                             <img
                               src={project.logo}
                               alt={`${project.title} logo`}
-                              className="h-14 object-contain"
+                              className="h-12 object-contain"
                             />
                           </div>
                         )}
