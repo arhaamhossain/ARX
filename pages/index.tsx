@@ -34,7 +34,7 @@ const categories: ProjectCategory[] = [
         title: "Low Power IC for Neuromorphic Computing",
         description: "Project 1 Description",
         highlights: [],
-        logo: "/ARX/transparent_Neuricell Logo.png",
+        logo: "/ARX/senior design logo.png",
         images: [
           "/ARX/Senior Design Proposal.pdf",
           "https://via.placeholder.com/600x400?text=Motor+Controller+PCB+2",
