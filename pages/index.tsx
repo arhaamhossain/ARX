@@ -565,11 +565,11 @@ export default function Home() {
                     <div className="order-2 md:order-1 space-y-6 md:col-span-1">
                       <div className="border border-gray-700 rounded-lg p-6 bg-gray-950 relative">
                         {project.logo && (
-                          <div className="absolute top-3 left-1/2 -translate-x-1/2 bg-white rounded-lg p-0 shadow-md">
+                          <div className="absolute top-3 left-1/2 -translate-x-1/2 bg-white rounded p-0 shadow-md w-fit">
                             <img
                               src={project.logo}
                               alt={`${project.title} logo`}
-                              className="h-24 object-contain"
+                              className="h-20 object-contain"
                             />
                           </div>
                         )}
