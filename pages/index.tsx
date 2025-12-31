@@ -35,7 +35,7 @@ const categories: ProjectCategory[] = [
         highlights: [],
         github: "https://github.com/arhaamhossain",
         images: [
-          "https://via.placeholder.com/600x400?text=Motor+Controller+PCB+1",
+          "/ARX/Senior_Design_Proposal.pdf",
           "https://via.placeholder.com/600x400?text=Motor+Controller+PCB+2",
           "https://via.placeholder.com/600x400?text=Motor+Controller+PCB+3",
         ],
