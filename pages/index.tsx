@@ -92,7 +92,7 @@ const categories: ProjectCategory[] = [
             ],
           },
           {
-            title: "Internal Competition 2024",
+            title: "9th Annual Internal Competition",
             description: "Sub-Project 2 Description",
             images: [
               "/ARX/IC Rule Book 2024 v2.pdf",
