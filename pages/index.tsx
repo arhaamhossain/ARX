@@ -33,7 +33,6 @@ const categories: ProjectCategory[] = [
         title: "Low Power IC for Neuromorphic Computing",
         description: "Project 1 Description",
         highlights: [],
-        github: "https://github.com/arhaamhossain",
         images: [
           "/ARX/Senior Design Proposal.pdf",
           "https://via.placeholder.com/600x400?text=Motor+Controller+PCB+2",
@@ -44,7 +43,6 @@ const categories: ProjectCategory[] = [
         title: "8-bit Pipelined Carry Select Adder",
         description: "Project 2 Description",
         highlights: [],
-        github: "https://github.com/arhaamhossain",
         images: [
           "https://via.placeholder.com/600x400?text=Power+Supply+1",
           "https://via.placeholder.com/600x400?text=Power+Supply+2",
@@ -55,7 +53,6 @@ const categories: ProjectCategory[] = [
         title: "Project 3",
         description: "Project 3 Description",
         highlights: [],
-        github: "https://github.com/arhaamhossain",
         images: [
           "https://via.placeholder.com/600x400?text=Sensor+Module+1",
           "https://via.placeholder.com/600x400?text=Sensor+Module+2",
@@ -71,7 +68,6 @@ const categories: ProjectCategory[] = [
         title: "Cyclone Autonomous Robot Control System",
         description: "Project 1 Description",
         highlights: [],
-        github: "https://github.com/arhaamhossain",
         images: [
           "/ARX/Robot Control.png",
           "/ARX/Robot Control back.png",
@@ -122,7 +118,6 @@ const categories: ProjectCategory[] = [
         title: "FPGA-Accelerated Reactive Collision UAV",
         description: "Project 1 Description",
         highlights: [],
-        github: "https://github.com/arhaamhossain",
         images: [
           "https://via.placeholder.com/600x400?text=Research+1+1",
           "https://via.placeholder.com/600x400?text=Research+1+2",
