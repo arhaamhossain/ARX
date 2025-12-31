@@ -15,6 +15,7 @@ interface Project {
   highlights?: string[];
   link?: string;
   github?: string;
+  logo?: string;
   images?: string[];
   subProjects?: SubProject[];
 }
@@ -33,6 +34,7 @@ const categories: ProjectCategory[] = [
         title: "Low Power IC for Neuromorphic Computing",
         description: "Project 1 Description",
         highlights: [],
+        logo: "/ARX/transparent_Neuricell Logo.png",
         images: [
           "/ARX/Senior Design Proposal.pdf",
           "https://via.placeholder.com/600x400?text=Motor+Controller+PCB+2",
@@ -565,6 +567,15 @@ export default function Home() {
                         <h3 className="text-xl font-semibold mb-4 text-white">
                           {project.title}
                         </h3>
+                        {project.logo && (
+                          <div className="mb-4">
+                            <img
+                              src={project.logo}
+                              alt={`${project.title} logo`}
+                              className="h-16 object-contain"
+                            />
+                          </div>
+                        )}
                         <p className="text-gray-300 text-lg leading-relaxed">
                           {project.description}
                         </p>
