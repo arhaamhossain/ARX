@@ -385,7 +385,7 @@ export default function Home() {
                       <div className="grid md:grid-cols-3 gap-12 items-start">
                         {/* Project Content - Left Column */}
                         <div className="order-2 md:order-1 space-y-6 md:col-span-1">
-                          <div className="border border-gray-700 rounded-lg p-6 bg-gray-900">
+                          <div className="border border-gray-700 rounded-lg p-6 bg-[#131313]">
                             <h3 className="text-xl font-semibold mb-4 text-white">
                               {project.title}
                             </h3>
@@ -563,7 +563,7 @@ export default function Home() {
                   <div className="grid md:grid-cols-3 gap-12 items-start">
                     {/* Project Content - Left Column */}
                     <div className="order-2 md:order-1 space-y-6 md:col-span-1">
-                      <div className="border border-gray-700 rounded-lg p-6 bg-gray-900 relative">
+                      <div className="border border-gray-700 rounded-lg p-6 bg-[#131313] relative">
                         {project.logo && (
                           <div className="absolute top-2 left-2 bg-white rounded-sm p-0 shadow-md w-fit overflow-hidden h-fit">
                             <img
