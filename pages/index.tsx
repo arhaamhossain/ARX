@@ -157,11 +157,26 @@ export default function Home() {
 
   // Reset scroll position to top on page load
   useEffect(() => {
+    // Immediate scroll
     window.scrollTo(0, 0);
-    // Ensure scroll happens after render
-    setTimeout(() => {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    
+    // Using requestAnimationFrame for more reliable scroll
+    requestAnimationFrame(() => {
       window.scrollTo(0, 0);
-    }, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    });
+
+    // Fallback with setTimeout
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    }, 100);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const getActiveImageIndex = (categoryTitle: string, projectTitle: string, subProjectIndex?: number) => {
