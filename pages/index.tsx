@@ -401,8 +401,8 @@ export default function Home() {
                                   onClick={() => setSelectedSubProjectIndex(project.title, idx)}
                                   className={`w-full text-left border rounded-lg p-4 transition cursor-pointer ${
                                     idx === selectedIndex
-                                      ? "border-white bg-gray-900 shadow-lg shadow-white/10"
-                                      : "border-gray-700 bg-gray-900/50 hover:border-gray-600"
+                                      ? "border-white bg-[#131313] shadow-lg shadow-white/10"
+                                      : "border-gray-700 bg-[#131313]/50 hover:border-gray-600"
                                   }`}
                                 >
                                   <h4 className="font-semibold text-white mb-1 text-sm">
