@@ -158,6 +158,10 @@ export default function Home() {
   // Reset scroll position to top on page load
   useEffect(() => {
     window.scrollTo(0, 0);
+    // Ensure scroll happens after render
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
   }, []);
 
   const getActiveImageIndex = (categoryTitle: string, projectTitle: string, subProjectIndex?: number) => {
