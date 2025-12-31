@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en" suppressHydrationWarning>
+    <Html lang="en" suppressHydrationWarning style={{ scrollBehavior: 'auto' }}>
       <Head>
         <link rel="icon" href="/ARX/arx.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,17 +14,19 @@ export default function Document() {
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              if (typeof window !== 'undefined') {
-                history.scrollRestoration = 'manual';
-                window.addEventListener('beforeunload', () => {
-                  window.scrollTo(0, 0);
-                });
-              }
+              (function() {
+                if ('scrollRestoration' in window.history) {
+                  window.history.scrollRestoration = 'manual';
+                }
+                window.scrollTo(0, 0);
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+              })();
             `,
           }}
         />
       </Head>
-      <body>
+      <body style={{ scrollBehavior: 'auto' }}>
         <Main />
         <NextScript />
       </body>

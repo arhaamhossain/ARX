@@ -12,21 +12,48 @@ export default function App({ Component, pageProps }: AppProps) {
       window.history.scrollRestoration = 'manual';
     }
 
-    const handleRouteChange = () => {
+    const scrollToTop = () => {
       window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
     };
 
-    router.events.on('routeChangeStart', handleRouteChange);
+    // Scroll on route change
+    const handleRouteChangeStart = () => {
+      scrollToTop();
+    };
+
+    const handleRouteChangeComplete = () => {
+      // Extra scroll after route completes
+      requestAnimationFrame(() => {
+        scrollToTop();
+      });
+      setTimeout(() => {
+        scrollToTop();
+      }, 100);
+    };
+
+    router.events.on('routeChangeStart', handleRouteChangeStart);
+    router.events.on('routeChangeComplete', handleRouteChangeComplete);
+
     return () => {
-      router.events.off('routeChangeStart', handleRouteChange);
+      router.events.off('routeChangeStart', handleRouteChangeStart);
+      router.events.off('routeChangeComplete', handleRouteChangeComplete);
     };
   }, [router]);
 
   useEffect(() => {
     // Extra scroll to top on mount
-    window.scrollTo(0, 0);
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    };
+
+    scrollToTop();
+    requestAnimationFrame(scrollToTop);
+    setTimeout(scrollToTop, 50);
+    setTimeout(scrollToTop, 200);
   }, []);
 
   return <Component {...pageProps} />;
