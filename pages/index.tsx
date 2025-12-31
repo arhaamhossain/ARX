@@ -30,7 +30,7 @@ const categories: ProjectCategory[] = [
     title: "Electrical Engineering",
     projects: [
       {
-        title: "Low Power IC for Neuromorphic Computing",
+        title: "Low-Power Compute-in-Memory IC (SkyWater 130nm)",
         description: "Project 1 Description",
         highlights: [],
         images: [
@@ -40,7 +40,7 @@ const categories: ProjectCategory[] = [
         ],
       },
       {
-        title: "8-bit Pipelined Carry Select Adder",
+        title: "8-bit Pipelined Carry-Select Adder (45nm PDK)",
         description: "Project 2 Description",
         highlights: [],
         images: [
