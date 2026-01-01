@@ -51,16 +51,6 @@ const categories: ProjectCategory[] = [
           "https://via.placeholder.com/600x400?text=Power+Supply+3",
         ],
       },
-      {
-        title: "Project 3",
-        description: "Project 3 Description",
-        highlights: [],
-        images: [
-          "https://via.placeholder.com/600x400?text=Sensor+Module+1",
-          "https://via.placeholder.com/600x400?text=Sensor+Module+2",
-          "https://via.placeholder.com/600x400?text=Sensor+Module+3",
-        ],
-      },
     ],
   },
   {
