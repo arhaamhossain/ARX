@@ -32,7 +32,7 @@ const categories: ProjectCategory[] = [
     projects: [
       {
         title: "Low Power IC for Neuromorphic Computing",
-        description: "Project 1 Description",
+        description: "Implemented a low-power compute-in-memory core using the SkyWater 130 nm CMOS process for a spiking neural network targeting spoken word detection in noisy environments. Mapping trained synaptic weights to hardware and developing transistor-level schematics and full-custom layouts for a ReRAM-based architecture, preparing the design for tapeout.",
         highlights: [],
         logo: "/ARX/senior design logo.png",
         images: [
@@ -43,7 +43,7 @@ const categories: ProjectCategory[] = [
       },
       {
         title: "8-bit Pipelined Carry Select Adder",
-        description: "Project 2 Description",
+        description: "Designed an 8-bit pipelined carry-select adder using a 45 nm CMOS process, targeting 4 GHz operation with a measured power consumption of 606.87 µW. Developed the block-level architecture using flip-flops, 1-bit full adders, and multiplexers, completed a full-custom layout, verified DRC/LVS, and performed post-layout timing and power verification in HSPICE.",
         highlights: [],
         images: [
           "https://via.placeholder.com/600x400?text=Power+Supply+1",
