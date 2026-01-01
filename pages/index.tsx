@@ -58,7 +58,7 @@ const categories: ProjectCategory[] = [
     projects: [
       {
         title: "Cyclone Autonomous Robot Control System",
-        description: "Project 1 Description",
+        description: "Designed and built a custom control system for an autonomous robot, featuring a 4-layer ESP32-based control PCB, dual H-bridge motor drivers, and onboard power regulation. Integrated a TF-Luna LiDAR over I2C for real-time distance sensing and obstacle awareness, and developed C++ firmware to process sensor data, control motors, and manage autonomous motion using sensor data.",
         highlights: [],
         images: [
           "/ARX/Robot Control.png",
@@ -68,7 +68,7 @@ const categories: ProjectCategory[] = [
       },
       {
         title: "Stony Brook Robotics Team",
-        description: "Project 2 Description",
+        description: "Engineering complex robotic systems from concept to competition, integrating electrical, mechanical, and software engineering. Designing power and control electronics, developing embedded firmware, and validating hardware through testing and iteration in a highly collaborative, performance-driven environment.",
         highlights: [],
         github: "https://github.com/sbroboticsteam",
         subProjects: [
@@ -108,7 +108,7 @@ const categories: ProjectCategory[] = [
     projects: [
       {
         title: "FPGA-Accelerated Reactive Collision UAV",
-        description: "Project 1 Description",
+        description: "Researching reactive collisions for UAVs. Developing a FPGA-based control system using a Zybo Z7 (Zynq-7000). Implementing a frame-based optical flow pipeline with the MATLAB Vision HDL Toolbox and integrated FPGA-level IP blocks with real-time control logic.",
         highlights: [],
         images: [
           "https://via.placeholder.com/600x400?text=Research+1+1",
