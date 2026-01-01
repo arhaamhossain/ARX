@@ -389,7 +389,7 @@ export default function Home() {
                             <h3 className="text-lg font-semibold mb-4 text-white">
                               {project.title}
                             </h3>
-                            <p className="text-gray-300 text-base leading-relaxed mb-6">
+                            <p className="text-gray-300 text-sm leading-relaxed mb-6">
                               {project.description}
                             </p>
                             
@@ -576,7 +576,7 @@ export default function Home() {
                         <h3 className={`text-lg font-semibold mb-4 text-white ${project.logo ? 'mt-16' : ''}`}>
                           {project.title}
                         </h3>
-                        <p className="text-gray-300 text-base leading-relaxed">
+                        <p className="text-gray-300 text-sm leading-relaxed">
                           {project.description}
                         </p>
                       </div>
