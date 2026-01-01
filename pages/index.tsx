@@ -43,7 +43,7 @@ const categories: ProjectCategory[] = [
       },
       {
         title: "8-bit Pipelined Carry Select Adder",
-        description: "Designed an 8-bit pipelined carry-select adder using a 45 nm CMOS process, targeting 4 GHz operation with a measured power consumption of 606.87 µW. Developed the block-level architecture using flip-flops, 1-bit full adders, and multiplexers, completed a full-custom layout, verified DRC/LVS, and performed post-layout timing and power verification in HSPICE.",
+        description: "Designed an 8-bit pipelined carry-select adder using a 45 nm CMOS process, targeting 4 GHz operation with a measured power consumption of 606.87 µW. Developed the block-level architecture using flip-flops, full adders, and multiplexers, completed a full-custom layout, verified DRC/LVS, and performed post-layout timing and power verification in HSPICE.",
         highlights: [],
         images: [
           "https://via.placeholder.com/600x400?text=Power+Supply+1",
