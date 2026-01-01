@@ -68,7 +68,7 @@ const categories: ProjectCategory[] = [
       },
       {
         title: "Stony Brook Robotics Team",
-        description: "Engineering complex robotic systems from concept to competition, integrating electrical, mechanical, and software engineering. Designing power and control electronics, developing embedded firmware, and validating hardware through testing and iteration in a highly collaborative, performance-driven environment.",
+        description: "Engineering complex robotic systems from concept to competition, integrating electrical, mechanical, and software engineering.",
         highlights: [],
         github: "https://github.com/sbroboticsteam",
         subProjects: [
