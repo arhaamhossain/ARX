@@ -388,6 +388,11 @@ export default function Home() {
                             <p className="text-gray-300 text-xs leading-relaxed mb-6">
                               {project.description}
                             </p>
+                            {project.skillsHighlights && (
+                              <p className="text-gray-400 text-xs leading-relaxed mt-4 mb-6 whitespace-pre-line">
+                                {project.skillsHighlights}
+                              </p>
+                            )}
                             
                             {/* Sub-Projects Stacked Vertically */}
                             <div className="space-y-3">
