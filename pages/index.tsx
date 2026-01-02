@@ -74,7 +74,7 @@ const categories: ProjectCategory[] = [
         title: "Stony Brook Robotics Team",
         description: "The Stony Brook Robotics Team brings complex robotic systems from concept to competition, integrating electrical, mechanical, and software engineering.",
         skillsHighlights: "Skill Highlights:\nAltium Designer, KiCAD, Microcontrollers...",
-        logo: "/ARX/sbrt logo.png",
+        logo: "/ARX/sbrt logo.jpg",
         highlights: [],
         github: "https://github.com/sbroboticsteam",
         subProjects: [
