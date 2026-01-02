@@ -32,7 +32,7 @@ const categories: ProjectCategory[] = [
     projects: [
       {
         title: "Low Power IC for Neuromorphic Computing",
-        description: "Implemented a low-power compute-in-memory core using the SkyWater 130 nm CMOS process for a spiking neural network targeting spoken word detection in noisy environments. Mapping trained synaptic weights to hardware and developing transistor-level schematics and full-custom layouts for a ReRAM-based architecture, preparing the design for tapeout.",
+        description: "Implemented a low-power compute-in-memory core using the SkyWater 130 nm CMOS process for a spiking neural network targeting spoken word detection in noisy environments. Mapping trained synaptic weights to hardware and developing transistor-level schematics and full-custom layouts for a ReRAM-based architecture, preparing the design for tapeout.\n\nSkills Highlights: Cadence Virtuoso, Spiking Neural Networks...",
         highlights: [],
         logo: "/ARX/senior design logo.png",
         images: [
@@ -43,7 +43,7 @@ const categories: ProjectCategory[] = [
       },
       {
         title: "8-bit Pipelined Carry Select Adder",
-        description: "Designed an 8-bit pipelined carry-select adder using a 45 nm CMOS process, targeting 4 GHz operation with a measured power consumption of 606.87 µW. Developed the block-level architecture using flip-flops, full adders, and multiplexers, completed a full-custom layout, verified DRC/LVS, and performed post-layout timing and power verification.",
+        description: "Designed an 8-bit pipelined carry-select adder using a 45 nm CMOS process, targeting 4 GHz operation with a measured power consumption of 606.87 µW. Developed the block-level architecture using flip-flops, full adders, and multiplexers, completed a full-custom layout, verified DRC/LVS, and performed post-layout timing and power verification.\n\nSkills Highlights: Cadence Virtuoso, Synopsys HSPICE...",
         highlights: [],
         images: [
           "https://via.placeholder.com/600x400?text=Power+Supply+1",
@@ -58,7 +58,7 @@ const categories: ProjectCategory[] = [
     projects: [
       {
         title: "Cyclone Autonomous Robot Control System",
-        description: "Designed and built a custom control system for an autonomous robot, featuring a 4-layer ESP32-based control PCB, dual H-bridge motor drivers, and onboard power regulation. Integrated a TF-Luna LiDAR over I2C for real-time distance sensing and obstacle awareness, and developed C++ firmware to process sensor data, control motors, and manage autonomous motion using sensor data.",
+        description: "Designed and built a custom control system for an autonomous robot, featuring a 4-layer ESP32-based control PCB, dual H-bridge motor drivers, and onboard power regulation. Integrated a TF-Luna LiDAR over I2C for real-time distance sensing and obstacle awareness, and developed C++ firmware to process sensor data, control motors, and manage autonomous motion using sensor data.\n\nSkills Highlights: Altium Designer, C++, ESP32...",
         highlights: [],
         images: [
           "/ARX/Robot Control.png",
@@ -68,7 +68,7 @@ const categories: ProjectCategory[] = [
       },
       {
         title: "Stony Brook Robotics Team",
-        description: "The Stony Brook Robotics Team brings complex robotic systems from concept to competition, integrating electrical, mechanical, and software engineering.",
+        description: "The Stony Brook Robotics Team brings complex robotic systems from concept to competition, integrating electrical, mechanical, and software engineering.\n\nSkills Highlights: Altium Designer, KiCAD, Microcontrollers...",
         highlights: [],
         github: "https://github.com/sbroboticsteam",
         subProjects: [
@@ -108,7 +108,7 @@ const categories: ProjectCategory[] = [
     projects: [
       {
         title: "FPGA-Accelerated Reactive Collision UAV",
-        description: "Researching reactive collisions for UAVs. Developing a FPGA-based control system using a Zybo Z7 (Zynq-7000). Implementing a frame-based optical flow pipeline with the MATLAB Vision HDL Toolbox and integrated FPGA-level IP blocks with real-time control logic.",
+        description: "Researching reactive collisions for UAVs. Developing a FPGA-based control system using a Zybo Z7 (Zynq-7000). Implementing a frame-based optical flow pipeline with the MATLAB Vision HDL Toolbox and integrated FPGA-level IP blocks with real-time control logic.\n\nSkills Highlights: MATLAB, FPGAs...",
         highlights: [],
         images: [
           "https://via.placeholder.com/600x400?text=Research+1+1",
