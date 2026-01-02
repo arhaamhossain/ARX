@@ -747,7 +747,7 @@ export default function Home() {
             </p>
           </div>
           <div className="space-y-4">
-            <div className="border border-gray-800 rounded-lg p-4 bg-gray-950/50 backdrop-blur">
+            <div className="border border-gray-800 rounded-lg p-4 bg-gray-950/50 backdrop-blur max-w-sm">
               <h3 className="text-white font-semibold mb-3 text-sm">Quick Facts</h3>
               <div className="space-y-2 text-gray-400 text-xs">
                 <div className="flex justify-between">
