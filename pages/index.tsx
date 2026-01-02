@@ -730,12 +730,12 @@ export default function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="bg-gray-950/50 py-20 border-t border-gray-800"
+        className="bg-gray-950/50 py-12 border-t border-gray-800"
       >
         <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-8 text-white">About Me</h2>
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
+        <h2 className="text-3xl font-bold mb-6 text-white">About Me</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-4 text-gray-400 text-sm leading-relaxed">
             <p>
               I&apos;m an Electrical Engineering student passionate about building innovative analog and digital hardware systems. I&apos;ve been fortunate to develop an intuition for hardware across multiple abstraction levels, from system architecture down to transistor-level design. My work spans across embedded systems, electronics, PCB development, and IC design.
             </p>
@@ -747,9 +747,9 @@ export default function Home() {
             </p>
           </div>
           <div className="space-y-4">
-            <div className="border border-gray-800 rounded-lg p-6 bg-gray-950/50 backdrop-blur">
-              <h3 className="text-white font-semibold mb-4">Quick Facts</h3>
-              <div className="space-y-3 text-gray-400">
+            <div className="border border-gray-800 rounded-lg p-4 bg-gray-950/50 backdrop-blur">
+              <h3 className="text-white font-semibold mb-3 text-sm">Quick Facts</h3>
+              <div className="space-y-2 text-gray-400 text-xs">
                 <div className="flex justify-between">
                   <span>Hobbies</span>
                   <span className="text-white font-semibold">Going to the gym and gaming</span>
