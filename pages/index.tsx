@@ -660,7 +660,11 @@ export default function Home() {
                     {/* Project Image Carousel - Right Column */}
                     {project.images && project.images.length > 0 && (
                       <div className="order-1 md:order-2 flex flex-col gap-6 md:col-span-2">
-                        <div className="relative bg-white overflow-hidden aspect-square rounded-lg shadow-lg flex items-center justify-center">
+                        <div className={`relative overflow-hidden aspect-square rounded-lg shadow-lg flex items-center justify-center ${
+                          project.title === "RoboCup Rescue (RCR)" && getActiveImageIndex(category.title, project.title) === 0
+                            ? "bg-[#333b48]"
+                            : "bg-white"
+                        }`}>
                         {project.images[getActiveImageIndex(category.title, project.title)].endsWith('.pdf') ? (
                           <embed
                             src={project.images[getActiveImageIndex(category.title, project.title)]}
