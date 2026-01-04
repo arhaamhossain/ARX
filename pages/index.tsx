@@ -116,6 +116,7 @@ const categories: ProjectCategory[] = [
         title: "FPGA-Accelerated Reactive Collision UAV",
         description: "Researching reactive collisions for UAVs. Developing a FPGA-based control system using a Zybo Z7 (Zynq-7000). Implementing a frame-based optical flow pipeline with the MATLAB Vision HDL Toolbox and integrated FPGA-level IP blocks with real-time control logic.",
         skillsHighlights: "Skill Highlights:\nMATLAB, Field-Programmable Gate Arrays (FPGAs)...",
+        github: "https://www.stonybrook.edu/commcms/soft-flyers/index.php",
         highlights: [],
         images: [
           "https://via.placeholder.com/600x400?text=Research+1+1",
@@ -639,7 +640,7 @@ export default function Home() {
                             rel="noopener noreferrer"
                             className="text-white hover:text-gray-300 underline transition text-base"
                           >
-                            GitHub
+                            {category.title === "Research" ? "The Soft Flyers Group" : "GitHub"}
                           </a>
                         )}
                         {project.link && (
