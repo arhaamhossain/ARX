@@ -617,7 +617,17 @@ export default function Home() {
                             {project.skillsHighlights}
                           </p>
                         )}
-                      </div>
+                        
+                        {project.github && (
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white hover:text-gray-300 underline transition text-base inline-block mt-6"
+                          >
+                            {category.title === "Research" ? "The Soft Flyers Group" : "GitHub"}
+                          </a>
+                        )}
 
                         {project.highlights && project.highlights.length > 0 && (
                           <div className="flex flex-wrap gap-2 mt-6">
@@ -631,18 +641,9 @@ export default function Home() {
                             ))}
                           </div>
                         )}
+                      </div>
 
                       <div className="flex gap-4">
-                        {project.github && (
-                          <a
-                            href={project.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-white hover:text-gray-300 underline transition text-base"
-                          >
-                            {category.title === "Research" ? "The Soft Flyers Group" : "GitHub"}
-                          </a>
-                        )}
                         {project.link && (
                           <a
                             href={project.link}
