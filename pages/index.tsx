@@ -204,10 +204,6 @@ export default function Home() {
     return selectedSubProject[projectTitle] || 0;
   };
 
-  const setSelectedSubProjectIndex = (projectTitle: string, index: number) => {
-    setSelectedSubProject({ ...selectedSubProject, [projectTitle]: index });
-  };
-
   const toggleSubProjectExpanded = (projectTitle: string, subProjectIndex: number) => {
     const key = `${projectTitle}-${subProjectIndex}`;
     setExpandedSubProjects({ ...expandedSubProjects, [key]: !expandedSubProjects[key] });
