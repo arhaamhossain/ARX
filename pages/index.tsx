@@ -153,6 +153,7 @@ const softwareTools = [
 export default function Home() {
   const [activeImage, setActiveImage] = useState<{ [key: string]: number }>({});
   const [expandedSubProjects, setExpandedSubProjects] = useState<{ [key: string]: boolean }>({});
+  const [selectedSubProject, setSelectedSubProject] = useState<{ [key: string]: number }>({});
 
   // Reset scroll position to top on page load
   useEffect(() => {
@@ -202,6 +203,12 @@ export default function Home() {
   const toggleSubProjectExpanded = (projectTitle: string, subProjectIndex: number) => {
     const key = `${projectTitle}-${subProjectIndex}`;
     setExpandedSubProjects({ ...expandedSubProjects, [key]: !expandedSubProjects[key] });
+    // Also select this sub-project for image display
+    setSelectedSubProject({ ...selectedSubProject, [projectTitle]: subProjectIndex });
+  };
+
+  const getSelectedSubProject = (projectTitle: string) => {
+    return selectedSubProject[projectTitle] || 0;
   };
 
   return (
@@ -368,7 +375,7 @@ export default function Home() {
               {category.projects.map((project) => {
                 // Handle sub-projects for Stony Brook Robotics Team
                 if (project.subProjects && project.subProjects.length > 0) {
-                  const selectedIndex = 0; // Show first sub-project's images by default
+                  const selectedIndex = getSelectedSubProject(project.title);
                   const selectedSubProj = project.subProjects[selectedIndex];
 
                   return (
@@ -410,7 +417,7 @@ export default function Home() {
                                     key={idx}
                                     onClick={() => toggleSubProjectExpanded(project.title, idx)}
                                     className={`w-full text-left border rounded-lg p-4 transition cursor-pointer ${
-                                      isExpanded
+                                      isExpanded || idx === selectedIndex
                                         ? "border-white bg-[#131313] shadow-lg shadow-white/10"
                                         : "border-gray-700 bg-[#131313]/50 hover:border-gray-600"
                                     }`}
