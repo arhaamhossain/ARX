@@ -79,8 +79,8 @@ const categories: ProjectCategory[] = [
         github: "https://github.com/sbroboticsteam",
         subProjects: [
           {
-            title: "MATE ROV",
-            description: "Sub-Project 1 Description",
+            title: "MATE ROV World Championship",
+            description: "An international underwater robotics competition focused on designing and operating remotely operated vehicles for real-world marine tasks. Contributing to the development of the ROV motherboard, supporting ESCs, motor drivers, power converters, an NVIDIA Jetson, IMU, and sensors interfaced through an STM32.",
             images: [
               "/ARX/MROV_CAD_RENDER_1.png",
               "https://via.placeholder.com/600x400?text=Stony+Brook+1+Image+2",
@@ -89,7 +89,7 @@ const categories: ProjectCategory[] = [
           },
           {
             title: "9th Annual Internal Competition",
-            description: "Sub-Project 2 Description",
+            description: "An annual internal competition designed to introduce students to robotics engineering across mechanical, electrical, and software disciplines. As Vice President, I directed the event, defined the game rules, and contributed to robot development and debugging for participating teams.",
             images: [
               "/ARX/IC Rule Book 2024 v2.pdf",
               "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+2",
@@ -97,8 +97,8 @@ const categories: ProjectCategory[] = [
             ],
           },
           {
-            title: "RCR Search & Rescue Bot",
-            description: "Sub-Project 3 Description",
+            title: "RoboCup Rescue (RCR)",
+            description: "An international robotics competition centered on autonomous robots operating in simulated disaster and search-and-rescue environments. As Power Lead, I designed the system-level embedded and power integration scheme and developed a relay-based battery management system to safely distribute power across onboard subsystems.",
             images: [
               "https://via.placeholder.com/600x400?text=Stony+Brook+3+Image+1",
               "/ARX/Dexter Power.png",
