@@ -421,12 +421,13 @@ export default function Home() {
                             
                             {/* Sub-Projects Stacked Vertically */}
                             <div className="space-y-3">
-                              {project.subProjects.map((subProj, idx) => {
+                              {project.subProjects && project.subProjects.map((subProj, idx) => {
                                 const isExpanded = expandedSubProjects[`${project.title}-${idx}`] || false;
+                                const totalSubProjects = project.subProjects?.length || 0;
                                 return (
                                   <button
                                     key={idx}
-                                    onClick={() => toggleSubProjectExpanded(project.title, idx, project.subProjects.length)}
+                                    onClick={() => toggleSubProjectExpanded(project.title, idx, totalSubProjects)}
                                     className={`w-full text-left border rounded-lg p-4 transition cursor-pointer ${
                                       isExpanded || idx === selectedIndex
                                         ? "border-white bg-[#131313] shadow-lg shadow-white/10"
