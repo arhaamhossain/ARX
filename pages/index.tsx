@@ -454,7 +454,7 @@ export default function Home() {
                                 rel="noopener noreferrer"
                                 className="text-white hover:text-gray-300 underline transition text-base inline-block mt-6"
                               >
-                                GitHub →
+                                GitHub
                               </a>
                             )}
                           </div>
@@ -639,7 +639,7 @@ export default function Home() {
                             rel="noopener noreferrer"
                             className="text-white hover:text-gray-300 underline transition text-base"
                           >
-                            GitHub →
+                            GitHub
                           </a>
                         )}
                         {project.link && (
