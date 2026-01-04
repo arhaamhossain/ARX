@@ -100,7 +100,7 @@ const categories: ProjectCategory[] = [
             title: "RoboCup Rescue (RCR)",
             description: "An international robotics competition centered on autonomous robots operating in simulated disaster and search-and-rescue environments. As Power Lead, I designed the system-level embedded and power integration scheme and developed a relay-based battery management system to safely distribute power across onboard subsystems.",
             images: [
-              "https://via.placeholder.com/600x400?text=Stony+Brook+3+Image+1",
+              "/ARX/dexter.png",
               "/ARX/Dexter Power.png",
               "/ARX/bms_circuit.svg",
             ],
