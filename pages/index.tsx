@@ -153,6 +153,7 @@ const softwareTools = [
 export default function Home() {
   const [activeImage, setActiveImage] = useState<{ [key: string]: number }>({});
   const [selectedSubProject, setSelectedSubProject] = useState<{ [key: string]: number }>({});
+  const [expandedSubProjects, setExpandedSubProjects] = useState<{ [key: string]: boolean }>({});
 
   // Reset scroll position to top on page load
   useEffect(() => {
@@ -205,6 +206,11 @@ export default function Home() {
 
   const setSelectedSubProjectIndex = (projectTitle: string, index: number) => {
     setSelectedSubProject({ ...selectedSubProject, [projectTitle]: index });
+  };
+
+  const toggleSubProjectExpanded = (projectTitle: string, subProjectIndex: number) => {
+    const key = `${projectTitle}-${subProjectIndex}`;
+    setExpandedSubProjects({ ...expandedSubProjects, [key]: !expandedSubProjects[key] });
   };
 
   return (
@@ -406,24 +412,29 @@ export default function Home() {
                             
                             {/* Sub-Projects Stacked Vertically */}
                             <div className="space-y-3">
-                              {project.subProjects.map((subProj, idx) => (
-                                <button
-                                  key={idx}
-                                  onClick={() => setSelectedSubProjectIndex(project.title, idx)}
-                                  className={`w-full text-left border rounded-lg p-4 transition cursor-pointer ${
-                                    idx === selectedIndex
-                                      ? "border-white bg-[#131313] shadow-lg shadow-white/10"
-                                      : "border-gray-700 bg-[#131313]/50 hover:border-gray-600"
-                                  }`}
-                                >
-                                  <h4 className="font-semibold text-white mb-1 text-sm">
-                                    {subProj.title}
-                                  </h4>
-                                  <p className="text-gray-300 text-xs leading-relaxed">
-                                    {subProj.description}
-                                  </p>
-                                </button>
-                              ))}
+                              {project.subProjects.map((subProj, idx) => {
+                                const isExpanded = expandedSubProjects[`${project.title}-${idx}`] || false;
+                                return (
+                                  <button
+                                    key={idx}
+                                    onClick={() => toggleSubProjectExpanded(project.title, idx)}
+                                    className={`w-full text-left border rounded-lg p-4 transition cursor-pointer ${
+                                      isExpanded
+                                        ? "border-white bg-[#131313] shadow-lg shadow-white/10"
+                                        : "border-gray-700 bg-[#131313]/50 hover:border-gray-600"
+                                    }`}
+                                  >
+                                    <h4 className="font-semibold text-white mb-1 text-sm">
+                                      {subProj.title}
+                                    </h4>
+                                    {isExpanded && (
+                                      <p className="text-gray-300 text-xs leading-relaxed">
+                                        {subProj.description}
+                                      </p>
+                                    )}
+                                  </button>
+                                );
+                              })}
                             </div>
 
                             {project.github && (
