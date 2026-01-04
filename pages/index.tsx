@@ -88,8 +88,8 @@ const categories: ProjectCategory[] = [
             ],
           },
           {
-            title: "9th Annual Internal Competition",
-            description: "An annual internal competition designed to introduce students to robotics engineering across mechanical, electrical, and software disciplines. As Vice President, I directed the event, defined the game rules, and contributed to robot development and debugging for participating teams.",
+            title: "Internal Competition: Capture the Flag",
+            description: "An annual internal competition designed to introduce students to robotics engineering across mechanical, electrical, and software disciplines. As Vice President, I directed the event, chose the theme, defined the game rules and scoring framework, and contributed to robot development and system debugging for participating teams.",
             images: [
               "/ARX/IC Rule Book 2024 v2.pdf",
               "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+2",
