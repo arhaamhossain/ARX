@@ -200,9 +200,20 @@ export default function Home() {
     setActiveImage({ ...activeImage, [key]: index });
   };
 
-  const toggleSubProjectExpanded = (projectTitle: string, subProjectIndex: number) => {
+  const toggleSubProjectExpanded = (projectTitle: string, subProjectIndex: number, totalSubProjects: number) => {
     const key = `${projectTitle}-${subProjectIndex}`;
-    setExpandedSubProjects({ ...expandedSubProjects, [key]: !expandedSubProjects[key] });
+    const newExpandedState = { ...expandedSubProjects };
+    
+    // Close all other sub-projects in this project
+    for (let i = 0; i < totalSubProjects; i++) {
+      const otherKey = `${projectTitle}-${i}`;
+      newExpandedState[otherKey] = false;
+    }
+    
+    // Toggle the current sub-project
+    newExpandedState[key] = !expandedSubProjects[key];
+    setExpandedSubProjects(newExpandedState);
+    
     // Also select this sub-project for image display
     setSelectedSubProject({ ...selectedSubProject, [projectTitle]: subProjectIndex });
   };
@@ -415,7 +426,7 @@ export default function Home() {
                                 return (
                                   <button
                                     key={idx}
-                                    onClick={() => toggleSubProjectExpanded(project.title, idx)}
+                                    onClick={() => toggleSubProjectExpanded(project.title, idx, project.subProjects.length)}
                                     className={`w-full text-left border rounded-lg p-4 transition cursor-pointer ${
                                       isExpanded || idx === selectedIndex
                                         ? "border-white bg-[#131313] shadow-lg shadow-white/10"
