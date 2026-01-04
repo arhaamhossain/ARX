@@ -152,7 +152,6 @@ const softwareTools = [
 
 export default function Home() {
   const [activeImage, setActiveImage] = useState<{ [key: string]: number }>({});
-  const [selectedSubProject, setSelectedSubProject] = useState<{ [key: string]: number }>({});
   const [expandedSubProjects, setExpandedSubProjects] = useState<{ [key: string]: boolean }>({});
 
   // Reset scroll position to top on page load
@@ -198,10 +197,6 @@ export default function Home() {
       key = `${categoryTitle}-${projectTitle}-${subProjectIndex}`;
     }
     setActiveImage({ ...activeImage, [key]: index });
-  };
-
-  const getSelectedSubProject = (projectTitle: string) => {
-    return selectedSubProject[projectTitle] || 0;
   };
 
   const toggleSubProjectExpanded = (projectTitle: string, subProjectIndex: number) => {
@@ -373,7 +368,7 @@ export default function Home() {
               {category.projects.map((project) => {
                 // Handle sub-projects for Stony Brook Robotics Team
                 if (project.subProjects && project.subProjects.length > 0) {
-                  const selectedIndex = getSelectedSubProject(project.title);
+                  const selectedIndex = 0; // Show first sub-project's images by default
                   const selectedSubProj = project.subProjects[selectedIndex];
 
                   return (
