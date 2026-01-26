@@ -467,6 +467,8 @@ export default function Home() {
                             backgroundColor: (project.title === "Stony Brook Robotics Team" && selectedSubProj.title === "MATE ROV World Championship" && getActiveImageIndex(category.title, project.title, selectedIndex) === 0)
                               || (project.title === "Stony Brook Robotics Team" && selectedSubProj.title === "RoboCup Rescue (RCR)" && getActiveImageIndex(category.title, project.title, selectedIndex) === 0)
                               ? "#333b48"
+                              : (project.title === "Stony Brook Robotics Team" && selectedSubProj.title === "Internal Competition: Capture the Flag" && getActiveImageIndex(category.title, project.title, selectedIndex) === 1)
+                              ? "#7a402e"
                               : "white"
                           }}>
                             {selectedSubProj.images[
