@@ -774,7 +774,7 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold mb-6 text-white">About Me</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4 text-gray-400 text-sm leading-relaxed">
             <p>
               I&apos;m an Electrical Engineering student passionate about building innovative analog and digital hardware systems. I&apos;ve been fortunate to develop an intuition for hardware across multiple abstraction levels, from system architecture down to transistor-level design. My work spans across embedded systems, electronics, PCB development, and IC design.
@@ -786,7 +786,7 @@ export default function Home() {
               I&apos;m driven by the goal of creating technology that is efficient, intelligent, and impactful, and by a commitment to continuous learning. I enjoy tackling complex challenges and pushing my understanding of engineering further with every project and task.
             </p>
           </div>
-          <div className="flex items-start justify-center">
+          <div className="flex justify-center">
             <img
               src="/ARX/Arhaam H. portfolio photo.jpg"
               alt="Arhaam"
