@@ -774,43 +774,43 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold mb-6 text-white">About Me</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="md:col-span-2 space-y-4 text-gray-400 text-sm leading-relaxed">
-            <p>
-              I&apos;m an Electrical Engineering student passionate about building innovative analog and digital hardware systems. I&apos;ve been fortunate to develop an intuition for hardware across multiple abstraction levels, from system architecture down to transistor-level design. My work spans across embedded systems, electronics, PCB development, and IC design.
-            </p>
-            <p>
-              Outside of coursework, I&apos;ve dedicated much of my time to robotics development. I previously served as Power Lead and Vice President of the Stony Brook Robotics Team, contributing to the development of an autonomous search-and-rescue robot and an underwater ROV for international competition. I&apos;m also a member of the Soft Flyers Group, where my current research focuses on developing a reactive collision UAV.
-            </p>
-            <p>
-              I&apos;m driven by the goal of creating technology that is efficient, intelligent, and impactful, and by a commitment to continuous learning. I enjoy tackling complex challenges and pushing my understanding of engineering further with every project and task.
-            </p>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-4">
+            <div className="space-y-4 text-gray-400 text-sm leading-relaxed">
+              <p>
+                I&apos;m an Electrical Engineering student passionate about building innovative analog and digital hardware systems. I&apos;ve been fortunate to develop an intuition for hardware across multiple abstraction levels, from system architecture down to transistor-level design. My work spans across embedded systems, electronics, PCB development, and IC design.
+              </p>
+              <p>
+                Outside of coursework, I&apos;ve dedicated much of my time to robotics development. I previously served as Power Lead and Vice President of the Stony Brook Robotics Team, contributing to the development of an autonomous search-and-rescue robot and an underwater ROV for international competition. I&apos;m also a member of the Soft Flyers Group, where my current research focuses on developing a reactive collision UAV.
+              </p>
+              <p>
+                I&apos;m driven by the goal of creating technology that is efficient, intelligent, and impactful, and by a commitment to continuous learning. I enjoy tackling complex challenges and pushing my understanding of engineering further with every project and task.
+              </p>
+            </div>
+            <div className="border border-gray-800 rounded-lg p-4 bg-gray-950/50 backdrop-blur max-w-sm">
+              <h3 className="text-white font-semibold mb-3 text-sm">Quick Facts</h3>
+              <div className="space-y-2 text-gray-400 text-xs">
+                <div className="flex justify-between">
+                  <span>Hobbies</span>
+                  <span className="text-white font-semibold">Going to the gym and gaming</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Favorite Restaurant</span>
+                  <span className="text-white font-semibold">Di Fara Pizza in Brooklyn</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Countries Traveled</span>
+                  <span className="text-white font-semibold">9</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-start justify-center">
             <img
               src="/ARX/Arhaam H. portfolio photo.jpg"
               alt="Arhaam"
               className="rounded-lg shadow-lg max-w-xs w-full object-cover"
             />
-          </div>
-        </div>
-        <div className="mt-8">
-          <div className="border border-gray-800 rounded-lg p-4 bg-gray-950/50 backdrop-blur max-w-sm">
-            <h3 className="text-white font-semibold mb-3 text-sm">Quick Facts</h3>
-            <div className="space-y-2 text-gray-400 text-xs">
-              <div className="flex justify-between">
-                <span>Hobbies</span>
-                <span className="text-white font-semibold">Going to the gym and gaming</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Favorite Restaurant</span>
-                <span className="text-white font-semibold">Di Fara Pizza in Brooklyn</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Countries Traveled</span>
-                <span className="text-white font-semibold">9</span>
-              </div>
-            </div>
           </div>
         </div>
         </div>
