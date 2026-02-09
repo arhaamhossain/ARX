@@ -91,7 +91,6 @@ const categories: ProjectCategory[] = [
             title: "Internal Competition: Capture the Flag",
             description: "An annual internal competition designed to introduce students to robotics engineering across mechanical, electrical, and software disciplines. As Vice President, I directed the event, chose the theme, defined the game rules and scoring framework, and contributed to robot development and system debugging for participating teams.",
             images: [
-              "/ARX/IC Rule Book 2024 v2.pdf",
               "/ARX/Internal Comp 2024 PCB.jpg",
               "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+3",
             ],
@@ -101,7 +100,6 @@ const categories: ProjectCategory[] = [
             description: "An international robotics competition centered on autonomous robots operating in simulated disaster and search-and-rescue environments. As Power Lead, I designed the system-level embedded and power integration scheme and developed a relay-based battery management system to safely distribute power across onboard subsystems.",
             images: [
               "/ARX/dexter.png",
-              "/ARX/Dexter Power.png",
               "/ARX/bms_circuit.svg",
             ],
           },
