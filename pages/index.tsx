@@ -92,7 +92,7 @@ const categories: ProjectCategory[] = [
             description: "An annual internal competition designed to introduce students to robotics engineering across mechanical, electrical, and software disciplines. As Vice President, I directed the event, chose the theme, defined the game rules and scoring framework, and contributed to robot development and system debugging for participating teams.",
             images: [
               "https://via.placeholder.com/600x400?text=Internal+Comp+Image+1",
-              "/ARX/Internal Comp 2024 PCB.png",
+              "/ARX/Internal Comp 2024 PCB.PNG",
               "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+3",
             ],
           },
