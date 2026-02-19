@@ -468,7 +468,7 @@ export default function Home() {
                               || (project.title === "Stony Brook Robotics Team" && selectedSubProj.title === "RoboCup Rescue (RCR)" && getActiveImageIndex(category.title, project.title, selectedIndex) === 0)
                               ? "#333b48"
                               : (project.title === "Stony Brook Robotics Team" && selectedSubProj.title === "Internal Competition: Capture the Flag" && getActiveImageIndex(category.title, project.title, selectedIndex) === 1)
-                              ? "#7a402e"
+                              ? "white"
                               : "white"
                           }}>
                             {selectedSubProj.images[
