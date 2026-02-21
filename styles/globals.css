@@ -107,7 +107,7 @@
       #000000 100%
     );
     background-size: 400% 400%;
-    animation: gradientShift 20s ease infinite;
+    animation: gradientShift 15s ease infinite;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
