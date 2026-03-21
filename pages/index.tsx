@@ -50,8 +50,10 @@ const categories: ProjectCategory[] = [
         highlights: [],
         images: [
           "https://via.placeholder.com/600x400?text=Power+Supply+1",
-          "https://via.placeholder.com/600x400?text=Power+Supply+2",
-          "https://via.placeholder.com/600x400?text=Power+Supply+3",
+          "/ARX/pipelined.png",
+          "/ARX/4-bit_block.png",
+          "/ARX/carry_logic.png",
+          "/ARX/DFF.png",
         ],
       },
     ],
