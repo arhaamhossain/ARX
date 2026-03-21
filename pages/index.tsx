@@ -51,7 +51,7 @@ const categories: ProjectCategory[] = [
         images: [
           "https://via.placeholder.com/600x400?text=Power+Supply+1",
           "/ARX/pipelined.png",
-          "/ARX/4-bit_block.png",
+          "/ARX/4bit_block.png",
           "/ARX/carry_logic.png",
           "/ARX/DFF.png",
         ],
@@ -503,7 +503,11 @@ export default function Home() {
                                 }
                                 alt={selectedSubProj.title}
                                 className="max-w-full max-h-full object-contain"
-                                style={{ animation: 'carouselSlideIn 0.5s ease-out' }}
+                                style={{ 
+                                  animation: 'carouselSlideIn 0.5s ease-out',
+                                  transform: [2, 3, 4].includes(getActiveImageIndex(category.title, project.title, selectedIndex)) ? 'scale(1.2)' : 'scale(1)',
+                                  transformOrigin: 'center'
+                                }}
                               />
                             )}
 
@@ -686,7 +690,11 @@ export default function Home() {
                             }
                             alt={project.title}
                             className="max-w-full max-h-full object-contain"
-                            style={{ animation: 'carouselSlideIn 0.5s ease-out' }}
+                            style={{ 
+                              animation: 'carouselSlideIn 0.5s ease-out',
+                              transform: [2, 3, 4].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.2)' : 'scale(1)',
+                              transformOrigin: 'center'
+                            }}
                           />
                         )}
 
