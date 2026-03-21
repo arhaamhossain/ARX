@@ -505,7 +505,7 @@ export default function Home() {
                                 className="max-w-full max-h-full object-contain"
                                 style={{ 
                                   animation: 'carouselSlideIn 0.5s ease-out',
-                                  transform: [2, 3, 4].includes(getActiveImageIndex(category.title, project.title, selectedIndex)) ? 'scale(1.2)' : 'scale(1)',
+                                  transform: [2].includes(getActiveImageIndex(category.title, project.title, selectedIndex)) ? 'scale(1.6)' : [3].includes(getActiveImageIndex(category.title, project.title, selectedIndex)) ? 'scale(1.5)' : [4].includes(getActiveImageIndex(category.title, project.title, selectedIndex)) ? 'scale(1.2)' : 'scale(1)',
                                   transformOrigin: 'center'
                                 }}
                               />
@@ -692,7 +692,7 @@ export default function Home() {
                             className="max-w-full max-h-full object-contain"
                             style={{ 
                               animation: 'carouselSlideIn 0.5s ease-out',
-                              transform: [2, 3, 4].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.2)' : 'scale(1)',
+                              transform: [2].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.6)' : [3].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.5)' : [4].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.2)' : 'scale(1)',
                               transformOrigin: 'center'
                             }}
                           />
