@@ -504,8 +504,8 @@ export default function Home() {
                                 alt={selectedSubProj.title}
                                 className="max-w-full max-h-full object-contain"
                                 style={{ 
-                                  animation: 'carouselSlideIn 0.5s ease-out',
-                                  transform: [2].includes(getActiveImageIndex(category.title, project.title, selectedIndex)) ? 'scale(1.6)' : [3].includes(getActiveImageIndex(category.title, project.title, selectedIndex)) ? 'scale(1.5)' : [4].includes(getActiveImageIndex(category.title, project.title, selectedIndex)) ? 'scale(1.2)' : 'scale(1)',
+                                  animation: project.title === "8-bit Pipelined Carry Select Adder" ? 'carouselSlideInAdder 0.5s ease-out' : 'carouselSlideIn 0.5s ease-out',
+                                  transform: project.title === "8-bit Pipelined Carry Select Adder" ? ([2].includes(getActiveImageIndex(category.title, project.title, selectedIndex)) ? 'scale(1.6)' : [3].includes(getActiveImageIndex(category.title, project.title, selectedIndex)) ? 'scale(1.5)' : [4].includes(getActiveImageIndex(category.title, project.title, selectedIndex)) ? 'scale(1.2)' : 'scale(1)') : 'scale(1)',
                                   transformOrigin: 'center'
                                 }}
                               />
@@ -691,8 +691,8 @@ export default function Home() {
                             alt={project.title}
                             className="max-w-full max-h-full object-contain"
                             style={{ 
-                              animation: 'carouselSlideIn 0.5s ease-out',
-                              transform: [2].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.6)' : [3].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.5)' : [4].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.2)' : 'scale(1)',
+                              animation: project.title === "8-bit Pipelined Carry Select Adder" ? 'carouselSlideInAdder 0.5s ease-out' : 'carouselSlideIn 0.5s ease-out',
+                              transform: project.title === "8-bit Pipelined Carry Select Adder" ? ([2].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.6)' : [3].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.5)' : [4].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.2)' : 'scale(1)') : 'scale(1)',
                               transformOrigin: 'center'
                             }}
                           />
