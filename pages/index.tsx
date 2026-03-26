@@ -2,6 +2,7 @@
 
 import Head from "next/head";
 import { useState, useEffect } from "react";
+import Particles from '../components/Particles';
 
 interface SubProject {
   title: string;
@@ -139,7 +140,7 @@ const softwareTools = [
   {
     name: "Altium Designer",
     url: "https://www.altium.com/",
-    logoPath: "/ARX/Altium_Logo.svg"
+    logoPath: "/ARX/altium_logo1.png"
   },
   {
     name: "Cadence Virtuoso",
@@ -227,39 +228,20 @@ export default function Home() {
 
   return (
     <div className="min-h-screen text-white relative">
-      {/* Animated Blob Background */}
-      <svg className="fixed inset-0 -z-10 w-full h-full">
-        <defs>
-          <filter id="blur">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="60" />
-          </filter>
-        </defs>
-        
-        {/* Decorative stars */}
-        <circle cx="10%" cy="10%" r="1.2" fill="#ffffff" opacity="0.8" style={{ animation: 'twinkle 3s ease-in-out infinite' }} />
-        <circle cx="85%" cy="15%" r="0.6" fill="#ffffff" opacity="0.6" style={{ animation: 'twinkle 2.5s ease-in-out infinite 0.5s' }} />
-        <circle cx="20%" cy="50%" r="1.4" fill="#ffffff" opacity="0.7" style={{ animation: 'twinkle 3.5s ease-in-out infinite 1s' }} />
-        <circle cx="92%" cy="45%" r="0.7" fill="#ffffff" opacity="0.5" style={{ animation: 'twinkle 2.8s ease-in-out infinite 0.3s' }} />
-        <circle cx="15%" cy="80%" r="1.3" fill="#ffffff" opacity="0.6" style={{ animation: 'twinkle 3.2s ease-in-out infinite 0.7s' }} />
-        <circle cx="88%" cy="70%" r="0.5" fill="#ffffff" opacity="0.8" style={{ animation: 'twinkle 2.9s ease-in-out infinite 0.2s' }} />
-        <circle cx="50%" cy="20%" r="0.9" fill="#ffffff" opacity="0.5" style={{ animation: 'twinkle 3.3s ease-in-out infinite 0.9s' }} />
-        <circle cx="25%" cy="70%" r="1.3" fill="#ffffff" opacity="0.7" style={{ animation: 'twinkle 2.7s ease-in-out infinite 0.4s' }} />
-        {/* Additional stars */}
-        <circle cx="75%" cy="5%" r="0.8" fill="#ffffff" opacity="0.65" style={{ animation: 'twinkle 3.1s ease-in-out infinite 0.6s' }} />
-        <circle cx="35%" cy="15%" r="1.1" fill="#ffffff" opacity="0.55" style={{ animation: 'twinkle 2.6s ease-in-out infinite 0.25s' }} />
-        <circle cx="5%" cy="35%" r="1.4" fill="#ffffff" opacity="0.7" style={{ animation: 'twinkle 3.4s ease-in-out infinite 0.8s' }} />
-        <circle cx="70%" cy="65%" r="0.6" fill="#ffffff" opacity="0.6" style={{ animation: 'twinkle 2.9s ease-in-out infinite 1.1s' }} />
-        <circle cx="45%" cy="90%" r="1.2" fill="#ffffff" opacity="0.75" style={{ animation: 'twinkle 3.2s ease-in-out infinite 0.35s' }} />
-        <circle cx="60%" cy="40%" r="0.8" fill="#ffffff" opacity="0.5" style={{ animation: 'twinkle 2.8s ease-in-out infinite 0.55s' }} />
-        <circle cx="80%" cy="85%" r="0.7" fill="#ffffff" opacity="0.65" style={{ animation: 'twinkle 3s ease-in-out infinite 0.7s' }} />
-        <circle cx="85%" cy="15%" r="0.5" fill="#ffffff" opacity="0.6" style={{ animation: 'twinkle 2.5s ease-in-out infinite 0.5s' }} />
-        <circle cx="20%" cy="50%" r="1.3" fill="#ffffff" opacity="0.7" style={{ animation: 'twinkle 3.5s ease-in-out infinite 1s' }} />
-        <circle cx="92%" cy="45%" r="0.9" fill="#ffffff" opacity="0.5" style={{ animation: 'twinkle 2.8s ease-in-out infinite 0.3s' }} />
-        <circle cx="15%" cy="80%" r="1.1" fill="#ffffff" opacity="0.6" style={{ animation: 'twinkle 3.2s ease-in-out infinite 0.7s' }} />
-        <circle cx="88%" cy="70%" r="0.8" fill="#ffffff" opacity="0.8" style={{ animation: 'twinkle 2.9s ease-in-out infinite 0.2s' }} />
-        <circle cx="50%" cy="20%" r="0.7" fill="#ffffff" opacity="0.5" style={{ animation: 'twinkle 3.3s ease-in-out infinite 0.9s' }} />
-        <circle cx="25%" cy="70%" r="1.1" fill="#ffffff" opacity="0.7" style={{ animation: 'twinkle 2.7s ease-in-out infinite 0.4s' }} />
-      </svg>
+      {/* Particles Background */}
+      <div style={{ width: '100%', height: '100%', position: 'fixed', top: 0, left: 0, zIndex: -1, pointerEvents: 'none' }}>
+        <Particles
+          particleColors={["#ffffff"]}
+          particleCount={1000}
+          particleSpread={50}
+          speed={1}
+          particleBaseSize={100}
+          moveParticlesOnHover={false}
+          alphaParticles={false}
+          disableRotation
+          pixelRatio={1}
+        />
+      </div>
 
       <Head>
         <title>Arhaam Hossain - Electrical Engineer</title>
