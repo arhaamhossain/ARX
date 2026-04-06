@@ -96,7 +96,7 @@ const categories: ProjectCategory[] = [
             images: [
               "https://via.placeholder.com/600x400?text=Internal+Comp+Image+1",
               "/ARX/Internal Comp 2024 PCB.PNG",
-              "https://via.placeholder.com/600x400?text=Stony+Brook+2+Image+3",
+              "/ARX/SBRT IC 2025 Group Photo.jpeg",
             ],
           },
           {
