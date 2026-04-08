@@ -86,8 +86,8 @@ const categories: ProjectCategory[] = [
             description: "An international underwater robotics competition focused on designing and operating remotely operated vehicles for real-world marine tasks. Contributing to the development of the ROV motherboard, supporting ESCs, motor drivers, power converters, an NVIDIA Jetson, IMU, and sensors interfaced through an STM32.",
             images: [
               "/ARX/sbrt mate rov 2026 render.png",
-              "https://via.placeholder.com/600x400?text=Stony+Brook+1+Image+2",
-              "https://via.placeholder.com/600x400?text=Stony+Brook+1+Image+3",
+              "/ARX/Motherboard front.png",
+              "/ARX/Motherboard back.png",
             ],
           },
           {
