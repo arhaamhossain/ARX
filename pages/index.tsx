@@ -83,7 +83,7 @@ const categories: ProjectCategory[] = [
         subProjects: [
           {
             title: "MATE ROV World Championship",
-            description: "An international underwater robotics competition focused on designing and operating remotely operated vehicles for real-world marine tasks. Contributing to the development of the ROV motherboard, supporting ESCs, motor drivers, power converters, an NVIDIA Jetson, IMU, and sensors interfaced through an STM32.",
+            description: "An international underwater robotics competition focused on designing and deploying remotely operated vehicles for real-world marine tasks. As Sensor Lead, I helped design the ROV Motherboard, supporting ESCs, power converters, motor drivers, an NVIDIA Jetson, IMU, and sensors interfaced through an STM32.",
             images: [
               "/ARX/sbrt mate rov 2026 render.png",
               "/ARX/Motherboard front.png",
