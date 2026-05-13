@@ -39,8 +39,8 @@ const categories: ProjectCategory[] = [
         highlights: [],
         logo: "/ARX/senior design logo.png",
         images: [
-          "/ARX/Senior Design Proposal.pdf",
-          "https://via.placeholder.com/600x400?text=Motor+Controller+PCB+2",
+          "/ARX/core1.png",
+          "/ARX/neuron.png",
           "https://via.placeholder.com/600x400?text=Motor+Controller+PCB+3",
         ],
       },
