@@ -674,7 +674,7 @@ export default function Home() {
                             className="max-w-full max-h-full object-contain"
                             style={{ 
                               animation: project.title === "8-bit Pipelined Carry Select Adder" || project.title === "Low Power IC for Neuromorphic Computing" ? 'carouselSlideInAdder 0.5s ease-out' : 'carouselSlideIn 0.5s ease-out',
-                              transform: project.title === "8-bit Pipelined Carry Select Adder" ? ([2].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.6)' : [3].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.5)' : [4].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.2)' : 'scale(1)') : project.title === "Low Power IC for Neuromorphic Computing" && [0].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.2)' : 'scale(1)',
+                              transform: project.title === "8-bit Pipelined Carry Select Adder" ? ([2].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.6)' : [3].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.5)' : [4].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.2)' : 'scale(1)') : project.title === "Low Power IC for Neuromorphic Computing" && [0].includes(getActiveImageIndex(category.title, project.title)) ? 'scale(1.3)' : 'scale(1)',
                               transformOrigin: 'center'
                             }}
                           />
