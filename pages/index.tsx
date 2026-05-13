@@ -34,7 +34,7 @@ const categories: ProjectCategory[] = [
     projects: [
       {
         title: "Low Power IC for Neuromorphic Computing",
-        description: "Implemented a low-power compute-in-memory core using the SkyWater 130 nm CMOS process for a spiking neural network targeting spoken word detection in noisy environments. Mapping trained synaptic weights to hardware and developing transistor-level schematics and full-custom layouts for a ReRAM-based architecture, preparing the design for tapeout.",
+        description: "Implemented a low-power compute-in-memory core using the SkyWater 130 nm CMOS process for a spiking neural network targeting spoken word detection in noisy environments. Mapping trained synaptic weights to hardware and developing transistor-level schematics and layouts for a ReRAM-based architecture, preparing the design for tapeout.",
         skillsHighlights: "Skill Highlights:\nCadence Virtuoso, Spiking Neural Networks...",
         highlights: [],
         logo: "/ARX/senior design logo.png",
