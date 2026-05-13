@@ -38,11 +38,7 @@ const categories: ProjectCategory[] = [
         skillsHighlights: "Skill Highlights:\nCadence Virtuoso, Spiking Neural Networks...",
         highlights: [],
         logo: "/ARX/senior design logo.png",
-        images: [
-          "/ARX/core1.png",
-          "/ARX/neuron.png",
-          "https://via.placeholder.com/600x400?text=Motor+Controller+PCB+3",
-        ],
+        images: [],
       },
       {
         title: "8-bit Pipelined Carry Select Adder",
