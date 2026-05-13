@@ -545,9 +545,9 @@ export default function Home() {
                                     selectedIndex
                                   );
                                 }}
-                                className="bg-gray-800 hover:bg-white hover:text-black text-white rounded-full p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
+                                className="bg-gray-800 hover:bg-white hover:text-black text-white rounded-lg p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
                               >
-                                ←
+                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" /></svg>
                               </button>
                               <button
                                 onClick={() => {
@@ -566,9 +566,9 @@ export default function Home() {
                                     selectedIndex
                                   );
                                 }}
-                                className="bg-gray-800 hover:bg-white hover:text-black text-white rounded-full p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
+                                className="bg-gray-800 hover:bg-white hover:text-black text-white rounded-lg p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
                               >
-                                →
+                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
                               </button>
                             </div>
                           )}
@@ -723,9 +723,9 @@ export default function Home() {
                                   newIndex
                                 );
                               }}
-                              className="bg-gray-800 hover:bg-white hover:text-black text-white rounded-full p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
+                              className="bg-gray-800 hover:bg-white hover:text-black text-white rounded-lg p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
                             >
-                              ←
+                              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" /></svg>
                             </button>
                             <button
                               onClick={() => {
@@ -741,9 +741,9 @@ export default function Home() {
                                   newIndex
                                 );
                               }}
-                              className="bg-gray-800 hover:bg-white hover:text-black text-white rounded-full p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
+                              className="bg-gray-800 hover:bg-white hover:text-black text-white rounded-lg p-3 transition text-lg font-semibold w-12 h-12 flex items-center justify-center"
                             >
-                              →
+                              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
                             </button>
                           </div>
                         )}
